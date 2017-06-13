@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <title>选择支付方式</title>
+        <script>
+         document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+        </script>
+        <link rel="stylesheet" href="../css/zhifu.css" />
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="top clearfix">
+                 <a href="querendingdan.html"><img src="../images/back.jpg" alt="" /></a>
+                <h1>选择支付方式</h1>
+                </div>
+            <div class="up clearfix">
+                <p>订单总额：</p>
+                <span>￥<i>5920</i></span>
+            </div>
+            <div class="down"></div>
+            <div class="main clearfix">
+                <ul>
+
+
+                <li>
+                    <img src="../images/205.jpg">
+                    <p>支付宝支付</p>
+                    <input type="radio" value="1" name="name1">
+                </li>
+                <li>
+                    <img src="../images/19.jpg">
+                    <p>微信支付</p>
+                    <input type="radio" value="2" name="name1">
+                </li>
+                <li>
+                    <img src="../images/21_03.jpg">
+                    <p>银联支付</p>
+                    <input type="radio" value="3" name="name1">
+                </li>
+                <img src="../images/jian_03.png" alt="" />
+
+            </ul>
+            </div>
+
+        <footer>
+            <div class="foot-up"></div>
+            <div class="foot-down">
+                <ul>
+                <li>
+                    <p>支付：</p>
+                    ￥<span>5920</span>
+                </li>
+                <li>
+                    <p class="daojishi">剩余<span>00:18:44</span> 请尽快付款</p>
+                </li>
+            </ul>
+            <a href="zhifuxiangqing.html">付款</a>
+
+
+            </div>
+        </footer>
+
+
+
+
+
+
+        </div>
+        <script src="../js/jquery-3.0.0.js"></script>
+        <script>
+
+         var minute=30,second=20;
+
+        var time=function(){
+        var zong=minute*60+second
+        var date=new Date();
+        var nowMinute=date.getMinutes();
+        var nowSecond=date.getSeconds()
+        var nowZong=nowMinute*60+nowSecond
+        var showZong=zong-nowZong
+
+
+        var showM=Math.floor((showZong%3600)/60)
+
+        var showS=(showZong%3600)%60
+          console.log(showS)
+         $(".daojishi>span").text(showM+":"+showS)
+
+         if(showZong==0){
+         clearInterval(t)}
+        }
+        time()
+
+        var t=setInterval(time,1000)
+
+
+        </script>
+
+    </body>
+</html>
