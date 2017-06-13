@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mappings</key>
+	<array>
+		<dict>
+			<key>ABProperty</key>
+			<string>First</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>prénom</string>
+				<string>nom de baptême</string>
+				<string>nom</string>
+				<string>petit nom</string>
+				<string>prénom usuel</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Middle</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>deuxième prénom</string>
+				<string>initiale second prénom</string>
+				<string>initiale deuxième prénom</string>
+				<string>autre prénom</string>
+				<string>initiale autre prénom</string>
+				<string>second prénom</string>
+				<string>matronyme</string>
+				<string>nom matronymique</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Last</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>nom de famille</string>
+				<string>nom</string>
+				<string>patronyme</string>
+				<string>nom patronyme</string>
+				<string>nom patronymique</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ProxyABProperty</key>
+			<string>FullNameComposite</string>
+			<key>ABComputedProperty</key>
+			<string>_realCompositeName</string>
+			<key>ABProperty</key>
+			<array>
+				<string>Prénom</string>
+				<string>Second prénom</string>
+				<string>Nom de famille</string>
+				<string>Suffixe</string>
+			</array>
+			<key>FieldLabels</key>
+			<array>
+				<string>nom complet</string>
+				<string>nom entier</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ProxyABProperty</key>
+			<string>FullNameComposite</string>
+			<key>ABComputedProperty</key>
+			<string>_realCompositeName</string>
+			<key>ABProperty</key>
+			<array>
+				<string>Prénom</string>
+				<string>Second prénom</string>
+				<string>Nom de famille</string>
+				<string>Suffixe</string>
+			</array>
+			<key>FieldLabels</key>
+			<array>
+				<string>nom</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Birthday</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>date de naissance</string>
+				<string>naissance</string>
+				<string>né(e) le</string>
+				<string>anniversaire</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>JobTitle</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>activité</string>
+				<string>profession</string>
+				<string>poste</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Email</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>email</string>
+				<string>courriel</string>
+				<string>messagerie électronique</string>
+				<string>adresse de messagerie</string>
+				<string>adresse électronique</string>
+				<string>courrier électronique</string>
+				<string>adresse de courriel</string>
+				<string>adresse de courrier électronique</string>
+				<string>adresse courriel</string>
+				<string>adresse e-mail</string>
+				<string>adrélec</string>
+				<string>adresse Internet</string>
+				<string>c. élec.</string>
+				<string>cé</string>
+				<string>mél.</string>
+				<string>adel</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>Street</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>rue</string>
+				<string>adresse postale</string>
+				<string>1ère adresse</string>
+				<string>adresse 1</string>
+				<string>adresse postale 1</string>
+				<string>adresse géographique</string>
+				<string>adresse municipale</string>
+				<string>adresse civique</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>Street</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>addresse</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>City</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>ville</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>State</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>état</string>
+				<string>région</string>
+				<string>province</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>ZIP</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>code postal</string>
+				<string>code</string>
+				<string>numéro postal</string>
+				<string>numéro postal d'acheminement</string>
+				<string>NPA</string>
+				<string>code ZIP</string>
+				<string>code postal américain</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>Country</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>pays</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Home&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>téléphone résidentiel</string>
+				<string>téléphone privé</string>
+				<string>téléphone maison</string>
+				<string>téléphone domicile</string>
+				<string>téléphone (le soir)</string>
+				<string>téléphone de résidence</string>
+				<string>téléphone de domicile</string>
+				<string>téléphone (soirée)</string>
+				<string>numéro de téléphone domicile</string>
+				<string>numéro de téléphone</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Work&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>téléphone professionnel</string>
+				<string>téléphone bureau</string>
+				<string>téléphone de travail</string>
+				<string>téléphone (journée)</string>
+				<string>téléphone (jour)</string>
+				<string>téléphone (entreprise)</string>
+				<string>téléphone (société)</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Mobile&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>téléphone portable</string>
+				<string>téléphone cellulaire</string>
+				<string>téléphone mobile</string>
+				<string>cellulaire</string>
+				<string>mobile</string>
+				<string>tél. cell.</string>
+				<string>cell.</string>
+				<string>téléphone cellulaire portatif</string>
+				<string>téléphone cellulaire portable</string>
+				<string>numéro de mobile</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Pager&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>téléavertisseur</string>
+				<string>récepteur de radiomessagerie</string>
+				<string>radiomessageur</string>
+				<string>messageur</string>
+				<string>sémaphone</string>
+				<string>téléav.</string>
+				<string>pagette</string>
+				<string>bellboy</string>
+				<string>pageur</string>
+				<string>bipeur</string>
+				<string>NDT</string>
+				<string>numéro de téléavertisseur</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>indicatif régional</string>
+				<string>indicatif de zone</string>
+				<string>indicatif téléphonique</string>
+				<string>code régional</string>
+				<string>indicatif</string>
+				<string>ir</string>
+				<string>ind. rég.</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>téléphone</string>
+				<string>numéro de téléphone</string>
+				<string>tél.</string>
+				<string>numéro de tél.</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>fax</string>
+				<string>télécopie</string>
+				<string>téléc.</string>
+				<string>télécopieur</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Organization</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>organisation</string>
+				<string>organisme</string>
+				<string>entreprise</string>
+				<string>société</string>
+				<string>compagnie</string>
+				<string>corporation</string>
+			</array>
+		</dict>
+	</array>
+	<key>Synonyms</key>
+	<dict>
+		<key>Address</key>
+		<dict>
+			<key>Country</key>
+			<array>
+				<array>
+					<string>Country</string>
+					<string>US</string>
+					<string>USA</string>
+					<string>United States</string>
+					<string>United States of America</string>
+					<string>États-Unis</string>
+					<string>États-Unis d'Amérique</string>
+					<string>É.-U.</string>
+				</array>
+				<array>
+					<string>UK</string>
+					<string>Grande-Bretagne</string>
+					<string>GB</string>
+					<string>Royaume-Uni</string>
+					<string>RU</string>
+				</array>
+			</array>
+			<key>State</key>
+			<array>
+				<array> <string>Alabama</string> <string>AL</string> </array>
+				<array> <string>Alaska</string> <string>AK</string> </array>
+				<array> <string>Alberta</string> <string>AB</string> </array>
+				<array> <string>Arizona</string> <string>AZ</string> </array>
+				<array> <string>Arkansas</string> <string>AR</string> </array>
+				<array> <string>British Columbia</string> <string>Colombie-Britannique</string> <string>BC</string> <string>C.-B.</string> </array>
+				<array> <string>California</string> <string>Californie</string> <string>CA</string> </array>
+				<array> <string>Colorado</string> <string>CO</string> </array>
+				<array> <string>Connecticut</string> <string>CT</string> </array>
+				<array> <string>Delaware</string> <string>DE</string> </array>
+				<array> <string>District of Columbia</string> <string>District de Columbia</string> <string>District fédéral de Columbia</string> <string>DC</string> </array>
+				<array> <string>Florida</string> <string>Floride</string> <string>FL</string> </array>
+				<array> <string>Georgia</string> <string>Géorgie</string> <string>GA</string> </array>
+				<array> <string>Hawaii</string> <string>Hawaï</string> <string>HI</string> </array>
+				<array> <string>Idaho</string> <string>ID</string> </array>
+				<array> <string>Illinois</string> <string>IL</string> </array>
+				<array> <string>Indiana</string> <string>IN</string> </array>
+				<array> <string>Iowa</string> <string>IA</string> </array>
+				<array> <string>Kansas</string> <string>KS</string> </array>
+				<array> <string>Kentucky</string> <string>KY</string> </array>
+				<array> <string>Louisiana</string> <string>Louisiane</string> <string>LA</string> </array>
+				<array> <string>Maine</string> <string>ME</string> </array>
+				<array> <string>Manitoba</string> <string>Mo</string> </array>
+				<array> <string>Maryland</string> <string>MD</string> </array>
+				<array> <string>Massachusetts</string> <string>MA</string> </array>
+				<array> <string>Michigan</string> <string>MI</string> </array>
+				<array> <string>Minnesota</string> <string>MN</string> </array>
+				<array> <string>Mississippi</string> <string>MS</string> </array>
+				<array> <string>Missouri</string> <string>MO</string> </array>
+				<array> <string>Montana</string> <string>MT</string> </array>
+				<array> <string>Nebraska</string> <string>NE</string> </array>
+				<array> <string>Nevada</string> <string>NV</string> </array>
+				<array> <string>New Brunswick</string> <string>Nouveau-Brunswick</string> <string>NB</string> <string>N.-B.</string> </array>
+				<array> <string>New Hampshire</string> <string>NH</string> </array>
+				<array> <string>New Jersey</string> <string>NJ</string> </array>
+				<array> <string>New Mexico</string> <string>Nouveau-Mexique</string> <string>NM</string> </array>
+				<array> <string>New York</string> <string>NY</string> </array>
+				<array> <string>Newfoundland</string> <string>Terre-Neuve-et-Labrador</string> <string>T.-N.-L.</string> <string>NL</string> <string>Terre-Neuve</string> <string>T.-N.</string> <string>NF</string> </array>
+				<array> <string>North Carolina</string> <string>Caroline du Nord</string> <string>NC</string> </array>
+				<array> <string>North Dakota</string> <string>Dakota du Nord</string> <string>ND</string> </array>
+				<array> <string>Northwest Territories</string> <string>Territoires du Nord-Ouest</string> <string>T.N.-O.</string> <string>NT</string> </array>
+				<array> <string>Nova Scotia</string> <string>Nouvelle-Écosse</string> <string>N.-É.</string> <string>NS</string> </array>
+				<array> <string>Nunavut</string> <string>Nun.</string> <string>NU</string> <string>Nt</string> </array>
+				<array> <string>Ohio</string> <string>OH</string> </array>
+				<array> <string>Oklahoma</string> <string>OK</string> </array>
+				<array> <string>Ontario</string> <string>ON</string> </array>
+				<array> <string>Oregon</string> <string>OR</string> </array>
+				<array> <string>Pennsylvania</string> <string>Pennsylvanie</string> <string>PA</string> </array>
+				<array> <string>Prince Edward Island</string> <string>Île-du-Prince-Édouard</string> <string>Î.-P.-É.</string> <string>PE</string> </array>
+				<array> <string>Quebec</string> <string>Québec</string> <string>Que.</string> <string>Qué.</string> <string>QC</string> <string>Qc</string> <string>PQ</string> </array>
+				<array> <string>Rhode Island</string> <string>RI</string> </array>
+				<array> <string>Saskatchewan</string> <string>SK</string> </array>
+				<array> <string>South Carolina</string> <string>Caroline du Sud</string> <string>SC</string> </array>
+				<array> <string>South Dakota</string> <string>Dakota du Sud</string> <string>SD</string> </array>
+				<array> <string>Tennessee</string> <string>TN</string> </array>
+				<array> <string>Texas</string> <string>TX</string> </array>
+				<array> <string>Utah</string> <string>UT</string> </array>
+				<array> <string>Vermont</string> <string>VT</string> </array>
+				<array> <string>Virginia</string> <string>Virginie</string> <string>VA</string> </array>
+				<array> <string>Washington</string> <string>WA</string> </array>
+				<array> <string>West Virginia</string> <string>Virginie-Occidentale</string> <string>WV</string> </array>
+				<array> <string>Wisconsin</string> <string>WI</string> </array>
+				<array> <string>Wyoming</string> <string>WY</string> </array>
+				<array> <string>Yukon</string> <string>YT</string> </array>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,152 @@
+﻿/*
+    This file has a UTF-8 BOM in it so it can be included from a UTF-16 page
+    without specifying an explicit character set. When editing it, please be
+    sure to preserve the BOM (first three bytes of the file, EF BB BF).
+ */
+
+body {
+    background-image: url(ErrorPageBackgroundTile.png);
+    text-align: center;
+    font-weight: bold;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.error-container {
+    margin-top: 97px;
+    padding-top: 0;
+}
+
+.error-container, .suggestion-container {
+    position: relative;
+    width: 500px;
+    min-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 93px;
+    padding-right: 93px;
+    padding-bottom: 0;
+}
+
+.suggestion-container {
+    margin-top: 25px;
+    padding-top: 25px;
+    background: url(ErrorPageDividerLine.png) top center no-repeat;
+}
+
+.icon {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 113px;
+    height: 120px;
+    background-image: url(ErrorPageCompass.png);    
+}
+
+html[dir=rtl] .icon {
+    left: auto;
+    right: 7px;
+}
+
+.text-container {
+    position: relative;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.error-text, .error-text-engraving, .error-text-inner-shadow
+{
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.error-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient(rgba(79, 82, 85, 0.9), rgba(124, 128, 130, 0.9)), url(ErrorPageBackgroundTile.png);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.error-text-engraving {
+    position: relative;
+    top: 1px;
+    width: 100%;
+    color: white;
+}
+
+.error-text-inner-shadow {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.error-title
+{
+    font-size: 20px;
+    line-height:24px;
+}
+
+.error-title.error-text-engraving {
+    margin-top: 21px;
+    margin-bottom: 10px;
+}
+
+.suggestion-form input
+{
+    font-size: 16px;
+}
+
+.suggestion-prompt
+{
+    margin-bottom: 18px;
+}
+
+.suggestion-prompt, .error-message {
+    font-size: 13px;
+    line-height: 16px;
+    -webkit-background-size: 100% 16px;
+}
+
+.suggestion-prompt.error-text-engraving {
+    padding-bottom: 0px;
+    margin-top: 6px;
+}
+
+#help-button {
+    display: inline-block;
+    
+    width: 25px;
+    height: 24px;
+    vertical-align: bottom;
+    background-image: url(HelpButton.png);
+}
+
+.error-text-engraving #help-button, .error-text #help-button {
+    background-image: none;
+    visibility: hidden;
+}
+
+#help-button:active {
+    background-image: url(HelpButtonPressed.png);
+}
+
+#help-button.platform-snow-leopard {
+    background-image: url(HelpButton~snowleopard.png);
+}
+
+#help-button:active.platform-snow-leopard {
+    background-image: url(HelpButtonPressed~snowleopard.png);
+}
+
+html[dir=rtl] .help-button {
+    left: 5px;
+    right: auto;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title class="l12n">RSS</title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+<link rel="stylesheet" href="Preferences.win.css">
+
+<style type="text/css">
+th
+{
+    width: 47%;
+}
+
+td
+{
+    width: 51%;
+}
+
+td select, p
+{
+    width: 83%;
+}
+
+th, td
+{
+    line-height: 25px;
+}
+
+input
+{
+    margin-bottom: .6em;
+}
+
+th select
+{
+    margin-bottom: .4em;
+}
+
+label
+{
+    margin-right: .4em;
+}
+</style>
+
+<script type="text/javascript">
+
+var RSSPreferences = {
+
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        RSSPreferencesController.loaded();
+    },
+    
+    changed: function()
+    {
+        RSSPreferencesController.changed();
+    }
+};
+
+HTMLViewController.loadLocalizedStrings(RSSPreferencesController);
+
+</script>
+</head>
+<body onload="RSSPreferences.pageLoaded()">
+
+<table>
+  <tr class="mac">
+    <th class="mac l12n">Default RSS reader:</th>
+    <td class="mac">
+        <select id="default-rss-select" onchange="RSSPreferences.changed()">
+        </select>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Automatically update articles in:</th>
+    <td>
+        <label>
+            <input type="checkbox" id="update-bar-box" onchange="RSSPreferences.changed()"><span class="l12n">Bookmarks bar</span>
+        </label>
+        <label>
+            <input type="checkbox" id="update-menu-box" onchange="RSSPreferences.changed()"><span class="l12n">Bookmarks menu</span>
+        </label>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Check for updates:</th>
+    <td>
+        <select id="update-check-select" onchange="RSSPreferences.changed()">
+            <option value="0" class="l12n">Never</option>
+            <option value="1" class="l12n">Every day</option>
+            <option value="2" class="l12n">Every hour</option>
+            <option value="3" class="l12n">Every 30 minutes</option>
+        </select>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Mark articles as read:</th>
+    <td>
+        <select id="mark-read-select" onchange="RSSPreferences.changed()">
+            <option value="view" class="l12n">After viewing the RSS page</option>
+            <option value="click" class="l12n">After clicking them</option>
+        </select>
+        <label>
+            <input type="checkbox" id="highlight-unread-box" onchange="RSSPreferences.changed()"><span class="l12n">Highlight unread articles</span>
+        </label>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Remove articles:</th>
+    <td>
+        <select id="remove-select" onchange="RSSPreferences.changed()">
+            <option value="0" class="l12n">After one day</option>
+            <option value="1" class="l12n">After one week</option>
+            <option value="2" class="l12n">After two weeks</option>
+            <option value="3" class="l12n">After one month</option>
+            <option value="4" class="l12n">After one year</option>
+            <option value="5" class="l12n">Never</option>
+        </select>
+        <button type="button" onclick="RSSPreferencesController.removeArticlesNow()" class="l12n">Remove Now</button>
+    </td>
+  </tr>
+</table>
+
+<a class="help-button" href="open-help-anchor:ibr1076"></a>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+html
+{
+    zoom: reset;
+}
+
+body 
+{
+  font: message-box;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  cursor: default;
+  overflow: hidden;
+}
+
+input, textarea, keygen, select, button, isindex
+{
+  font: message-box;
+}
+
+img
+{
+  -webkit-user-drag: none;
+}
+
+button
+{
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  min-width: 80px;
+}
+
+button.action
+{
+  margin: auto .5em auto .5em;
+}
+
+button.default, input[type="reset"].default
+{
+  -webkit-appearance: default-button;
+}

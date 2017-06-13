@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title></title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+
+<style type="text/css">
+html
+{
+  width: 278px;
+  min-height: 130px;
+}
+
+#bookmark-name
+{
+  width: 100%;
+}
+</style>
+
+<script type="text/javascript">
+var BookmarkTitleChange = {
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        BookmarkTitleChangeController.loaded();
+    },
+    
+    cancelSelected: function()
+    {
+        BookmarkTitleChangeController.cancelSelected();
+    },
+    
+    okSelected: function()
+    {
+        BookmarkTitleChangeController.okSelected();
+    }
+}
+
+HTMLViewController.loadLocalizedStrings(BookmarkTitleChangeController);
+
+</script>
+</head>
+
+<body onload="BookmarkTitleChange.pageLoaded()">
+<h1 class="l12n">Type a name for the bookmark.</h1>
+<input type="text" id="bookmark-name">
+<div class="action-group">
+<button class="action l12n" onclick="BookmarkTitleChange.okSelected()" type="submit">OK</button>
+<button class="action l12n" onclick="BookmarkTitleChange.cancelSelected()" type="button">Cancel</button>
+</div>
+</body>
+</html>

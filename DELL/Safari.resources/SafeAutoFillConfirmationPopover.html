@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style>
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: Lucida Grande, sans-serif;
+        font-weight: normal;
+    }
+    
+    body {
+        margin: 0;
+        padding: 2px; /* We also add this padding to SafeAutoFillConfirmation.scrollHeight() below */
+        min-width: 306px;
+        overflow: hidden;
+        -webkit-user-select: none;
+    }
+    
+    h1 {
+        font-size: 13px;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    #data-table {
+        margin-left: 10px;
+        margin-right: auto;
+        font-size: 11px;
+        border-collapse: collapse;
+    }
+    
+    #data-table td {
+        padding-top: 2px;
+        padding-bottom: 8px;
+    }
+    
+    #data-table tr:last-child td {
+        padding-bottom: 3px;
+    }
+    
+    #data-table tr td:first-child {
+        text-align: right;
+        padding-right: 8px;
+        color: rgb(166, 166, 166);
+        font-weight: bold;
+        vertical-align: top;
+        border-right: solid 1px rgb(228, 228, 228); 
+    }
+
+    #data-table tr td:last-child {
+        padding-left: 8px;
+    }
+    
+    #table-container {
+        background: white;
+    }
+    
+    .button-bar {
+        text-align: right;
+        margin-bottom: 0;
+        padding: 0 8px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .button-bar button {
+        font-family: Lucida Grande, sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+        min-width: 90px;
+        margin: 0 0 0 6px;
+        vertical-align: bottom;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    button.default {
+        -webkit-appearance: default-button;
+    }
+    
+    </style>
+    <script type="text/javascript" src="Utilities.js"></script>
+    <script type="text/javascript" src="HTMLViewController.js"></script>
+    <script type="text/javascript">
+        var SafeAutoFillConfirmation = {
+            pageLoaded: function()
+            {
+                HTMLViewController.pageLoaded();
+                SafeAutoFillConfirmationController.loaded();
+                
+                document.getElementById("cancel-button").addEventListener("click", function(e) { SafeAutoFillConfirmationController.cancelAutoFill(); }, false);
+                document.getElementById("autofill-button").addEventListener("click", function(e) { SafeAutoFillConfirmationController.doAutoFill(); }, false);
+                document.body.addEventListener("keydown", SafeAutoFillConfirmation.keyDown);
+            },
+              
+            pageUnloaded: function()
+            {
+                SafeAutoFillConfirmationController.unload();
+            },
+            
+            keyDown: function(event)
+            {
+                // Pressing the escape key is equivalent to clicking Cancel.
+                var escapeKeyIdentifier = "U+001B";
+                if (event.keyIdentifier == escapeKeyIdentifier) {
+                    document.getElementById("cancel-button").click();
+                    event.preventDefault();
+                }
+            },
+            
+            scrollWidth: function()
+            {
+                return document.body.scrollWidth;
+            },
+            
+            scrollHeight: function()
+            {
+                // It doesn't look like scrollHeight takes into the bottom padding?  Add it manually here.
+                return document.body.scrollHeight + 2;
+            },
+            
+            addData: function(name, valueArray)
+            {
+                if (valueArray.length == 1)
+                    SafeAutoFillConfirmation._addSingleLineData(name, valueArray[0]);
+                else
+                    SafeAutoFillConfirmation._addMultiLineData(name, valueArray);
+            },
+            
+            _addSingleLineData: function(name, value)
+            {
+                var nameElement = document.createElement("td");
+                nameElement.textContent = name;
+                var valueElement = document.createElement("td");
+                valueElement.textContent = value;
+                var row = document.createElement("tr");
+                row.appendChild(nameElement);
+                row.appendChild(valueElement);
+                document.getElementById("data-table").appendChild(row);
+            },
+            
+            _addMultiLineData: function(name, lines)
+            {
+                var nameElement = document.createElement("td");
+                nameElement.textContent = name;
+                var valueElement = document.createElement("td");
+                for (var i = 0; i < lines.length; ++i) {
+                    var lineElement = document.createElement("p");
+                    lineElement.textContent = lines[i];
+                    valueElement.appendChild(lineElement);
+                }
+                var row = document.createElement("tr");
+                row.appendChild(nameElement);
+                row.appendChild(valueElement);
+                document.getElementById("data-table").appendChild(row);                
+            },
+        };
+
+        HTMLViewController.loadLocalizedStrings(SafeAutoFillConfirmationController);
+        window.addEventListener("load", function(e) { SafeAutoFillConfirmation.pageLoaded(); }, false);
+        window.addEventListener("unload", function(e) { SafeAutoFillConfirmation.pageUnloaded(); }, false);
+    </script>
+</head>
+<body>
+    <div id="table-container">
+        <table id="data-table">
+        </table>
+    </div>
+    
+    <div class="button-bar">
+        <button class="l12n" type="button" id="cancel-button">Cancel</button>
+        <button class="l12n default" type="submit" id="autofill-button">AutoFill</button>
+    </div>
+</body>
+</html>

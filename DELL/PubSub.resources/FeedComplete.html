@@ -1,0 +1,21 @@
+<?
+    aggregate  = model;
+?>
+<!-- end apple-rss-content -->            </div>
+
+            <div id="apple-rss-pagination">
+                <div class="apple-rss-pagination" align="center">
+                    <img id="apple-rss-previous-article" src="<?= pubsub.getPathForResource("PreviousPage", "tif") ?>" width="19" height="18" onclick="goToPage(-4)"/>
+                    <span id="apple-rss-previous-articles"><a href="#" onclick="goToPage(-3); return false;"><?= LOC.kPreviousPages ?></a></span><span id="apple-rss-current-articles"><a href="#" onclick="goToPage(1); return false;">1</a><a href="#" onclick="goToPage(2); return false;">2</a><a href="#" onclick="goToPage(3); return false;">3</a><a href="#" onclick="goToPage(4); return false;">4</a><a href="#" onclick="goToPage(5); return false;">5</a><a href="#" onclick="goToPage(6); return false;">6</a><a href="#" onclick="goToPage(7); return false;">7</a><a href="#" onclick="goToPage(8); return false;">8</a><a href="#" onclick="goToPage(9); return false;">9</a><a href="#" onclick="goToPage(10); return false;">10</a></span><span id="apple-rss-next-articles"><a href="#" onclick="goToPage(-2); return false;"><?= LOC.kNextPages ?></a></span>
+                    <img id="apple-rss-next-article" src="<?= pubsub.getPathForResource("NextPage", "tif") ?>" width="19" height="18" onclick="goToPage(-1)"/>
+                </div>
+            </div>
+
+<!-- end apple-rss-content-area -->        </div>        
+    </div>
+    
+    <script language='JavaScript'>
+        setupPagination(<?=aggregate:getEntriesPerPage()?>);
+    </script>
+</body>
+</html>

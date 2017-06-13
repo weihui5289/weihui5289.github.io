@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+body {
+    font: message-box;
+    min-width: 668px;
+    padding: 0;
+    margin: 10px 0 40px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    overflow: hidden;
+}
+
+body.platform-windows {
+    background-color: ThreeDFace;
+    color: WindowText;
+}
+
+body.platform-mac {
+    background-color: transparent;
+    color: black;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#help {
+    -webkit-appearance: none;
+    background-color: transparent;
+    background-image: url(HelpButton.png);
+    background-size: 25px 24px;
+    border: none;
+    width: 25px;
+    height: 24px;
+    padding: 0;
+}
+
+#help:active {
+    background-image: url(HelpButtonPressed.png);
+}
+
+#help.platform-snow-leopard
+{
+    background-image: url(HelpButton~snowleopard.png);
+}
+
+#help:active.platform-snow-leopard
+{
+    background-image: url(HelpButtonPressed~snowleopard.png);
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    #help {
+        background-image: url(HelpButton@2x.png);
+    }
+
+    #help:active {
+        background-image: url(HelpButtonPressed@2x.png);
+    }
+}

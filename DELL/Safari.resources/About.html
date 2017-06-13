@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title class="l12n">About Safari</title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+
+<style type="text/css">
+html
+{
+  min-width: 350px;
+}
+h1, p, img
+{
+  text-align: center;
+}
+h1
+{
+  font-size: 11pt;
+}
+</style>
+
+<script type="text/javascript">
+var About = {
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        AboutController.loaded();
+    }
+}
+
+HTMLViewController.loadLocalizedStrings(AboutController);
+
+</script>
+
+</head>
+
+<body onload="About.pageLoaded()">
+<p>
+<img width="64" height="64" src="compass.png">
+</p>
+<h1>Safari</h1>
+<p id="productVersion"></p>
+<p class="l12n">Copyright © 2007-2012 Apple Inc. All rights reserved.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?  local enclosure = model
+    local divclass
+
+    local mimeType = escape(enclosure:getMIMEType())
+    local title = escape(enclosure:getTitle() and enclosure:getTitle() or enclosure:getFilename())
+    local length = enclosure:getLengthString()
+    if length == "" then length = "&nbsp;" end
+    local url = isAllowableURL(enclosure:getURL()) and escape(enclosure:getURL()) or null
+    local localImageFileURL = enclosure:getImageURL()
+    local canOpenInITunes = enclosure:canOpenInITunes()
+    
+    local enclosureLink
+    if url then
+        enclosureLink = "<a href=\"" .. url .. "\">" .. title .. "</a>"
+    else
+        enclosureLink = title
+    end
+?>
+
+<div class="apple-rss-enclosure">
+<? if localImageFileURL ~= "" then ?>    <img class="apple-rss-enclosure-image" src="<?= localImageFileURL ?>" height="32" width="32"/>
+<? end ?>
+    <div class="apple-rss-enclosure-filename"><?=enclosureLink?></div>
+    <div class="apple-rss-enclosure-length"><?=length?> </div>
+<? if canOpenInITunes then ?>    <script language='JavaScript'>
+        showTunesLink();
+    </script><? end ?>
+<!--- end enclosure -->
+</div>

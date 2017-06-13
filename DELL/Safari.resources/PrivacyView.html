@@ -1,0 +1,182 @@
+<html>
+    <head>
+         <meta charset="utf-8">
+         <script type="text/javascript" src="HTMLViewController.js"></script>
+         <script type="text/javascript" src="Utilities.js"></script>
+         <link rel="stylesheet" href="PrivacyView.css">
+         <script type="text/javascript">
+
+         // Needs to be kept in sync with the BlockCookiesPolicy enum in TrackingDataController.h
+         var BlockCookiesPolicy = {
+             Always : 0,
+             Never : 1,
+             FromThirdParties : 2,
+         };
+         
+         // Needs to be kept in sync with the GeolocationPermissionPolicy enum in GeolocationController.h
+         var GeolocationPermissionPolicy = {
+            AlwaysDenyPermission : 0,
+            PromptForPermissionEvery24HoursPerSite : 1,
+            PromptForPermissionOncePerSite : 2,
+        };
+
+         var PrivacyView = {
+             pageLoaded: function()
+             {
+                 HTMLViewController.pageLoaded();
+
+                 applyPlatformSpecificStyle();
+
+                 document.documentElement.setAttribute("aria-label", HTMLViewController.UIString("Privacy"));
+                 document.getElementById("help").setAttribute("aria-label", HTMLViewController.UIString("Help"));
+
+                 PrivacyViewController.load();
+            },
+
+            pageUnloaded: function()
+            {
+                PrivacyViewController.unload();
+            },
+
+            showSummary: function(summaryType)
+            {
+                document.getElementById(summaryType + "Summary").removeStyleClass("hidden");
+            },
+            
+            hideSummary: function(summaryType)
+            {
+                document.getElementById(summaryType + "Summary").addStyleClass("hidden");
+            },
+
+            helpClicked: function()
+            {
+                document.location.href = "open-help-anchor:sfri35610";
+            },
+
+            // Cookie Removal
+
+            removeTrackingDataForAllWebsites: function()
+            {
+                PrivacyViewController.removeTrackingDataForAllWebsites();
+            },
+
+            numberOfWebsitesWithTrackingDataUpdated: function(newNumber)
+            {
+                if (!newNumber) {
+                    this.hideSummary("trackingData");
+                    return;
+                }
+
+                var websitesWithTrackingDataElement = document.getElementById("websitesWithTrackingData");
+                if (newNumber == 1)
+                    websitesWithTrackingDataElement.innerText = HTMLViewController.UIString("1 website stored cookies or other data");
+                else
+                    websitesWithTrackingDataElement.innerText = HTMLViewController.UIString("%@ websites stored cookies or other data").format(newNumber);
+
+                this.showSummary("trackingData");
+            },
+
+            showWebsiteTrackingDataDetails: function()
+            {
+                PrivacyViewController.showWebsiteTrackingDataDetails();
+            },
+
+            // Cookie Blocking
+
+            setBlockCookiesPolicy: function(policy, isManaged)
+            {
+                var blockCookiesPolicyRadioButtonID;
+                switch (policy) {
+                    case BlockCookiesPolicy.Always:
+                        blockCookiesPolicyRadioButtonID = "block-cookies-always-radio";
+                        break;
+                    case BlockCookiesPolicy.Never:
+                        blockCookiesPolicyRadioButtonID = "block-cookies-never-radio";
+                        break;
+                    case BlockCookiesPolicy.FromThirdParties:
+                        blockCookiesPolicyRadioButtonID = "block-cookies-third-parties-radio";
+                        break;
+                }
+                document.getElementById(blockCookiesPolicyRadioButtonID).checked = true;
+
+                document.getElementById("block-cookies-always-radio").disabled = isManaged;
+                document.getElementById("block-cookies-never-radio").disabled = isManaged;
+                document.getElementById("block-cookies-third-parties-radio").disabled = isManaged;
+            },
+
+            blockCookiesPolicyChanged: function(policy)
+            {
+                PrivacyViewController.blockCookiesPolicyChanged(policy);
+            },
+
+            // Location
+
+            setAllowAskingForLocationPolicy: function(policy)
+            {
+                var locationPolicyRadioButtonID;
+                switch (policy) {
+                    case GeolocationPermissionPolicy.AlwaysDenyPermission:
+                        locationPolicyRadioButtonID = "prevent-prompting-for-location";
+                        break;
+                    case GeolocationPermissionPolicy.PromptForPermissionEvery24HoursPerSite:
+                        locationPolicyRadioButtonID = "prompt-for-location-every-24-hours";
+                        break;
+                    case GeolocationPermissionPolicy.PromptForPermissionOncePerSite:
+                        locationPolicyRadioButtonID = "prompt-for-location-once-per-site";
+                        break;
+                }
+                document.getElementById(locationPolicyRadioButtonID).checked = true;
+            },
+
+            allowAskingForLocationPolicyChanged: function(policy)
+            {
+                PrivacyViewController.allowAskingForLocationPolicyChanged(policy);
+            },
+        };
+
+        HTMLViewController.loadLocalizedStrings(PrivacyViewController);
+        </script>
+    </head>
+    <body onload="PrivacyView.pageLoaded()" onunload="PrivacyView.pageUnloaded()">
+        <div id="content">
+            <table>
+                <tr>
+                    <th class="l12n" id="cookiesAndOtherWebsiteData">Cookies and other website data:</th>
+                    <td>
+                        <button id="removeAllWebsiteData" class="l12n" onclick="PrivacyView.removeTrackingDataForAllWebsites()">Remove All Website Data…</button>
+                        <div id="trackingDataSummary" class="description hidden"><span id="websitesWithTrackingData"></span><button class="l12n showDetails" onclick="PrivacyView.showWebsiteTrackingDataDetails()">Details…</button></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="l12n">Block cookies:</th>
+                    <td>
+                        <label>
+                            <input type="radio" name="blockCookies" id="block-cookies-third-parties-radio" onclick="PrivacyView.blockCookiesPolicyChanged(BlockCookiesPolicy.FromThirdParties)" checked><span class="l12n">From third parties and advertisers</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="blockCookies" id="block-cookies-always-radio" onclick="PrivacyView.blockCookiesPolicyChanged(BlockCookiesPolicy.Always)"><span class="l12n">Always</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="blockCookies" id="block-cookies-never-radio" onclick="PrivacyView.blockCookiesPolicyChanged(BlockCookiesPolicy.Never)"><span class="l12n">Never</span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="l12n">Limit website access to location services:</th>
+                    <td>
+                        <label>
+                            <input type="radio" name="location" id="prompt-for-location-every-24-hours" onclick="PrivacyView.allowAskingForLocationPolicyChanged(GeolocationPermissionPolicy.PromptForPermissionEvery24HoursPerSite)" checked><span class="l12n">Prompt for each website once each day</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="location" id="prompt-for-location-once-per-site" onclick="PrivacyView.allowAskingForLocationPolicyChanged(GeolocationPermissionPolicy.PromptForPermissionOncePerSite)"><span class="l12n">Prompt for each website one time only</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="location" id="prevent-prompting-for-location" onclick="PrivacyView.allowAskingForLocationPolicyChanged(GeolocationPermissionPolicy.AlwaysDenyPermission)"><span class="l12n">Deny without prompting</span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button id="help" onclick="PrivacyView.helpClicked()"></button>
+    </body>
+</html>

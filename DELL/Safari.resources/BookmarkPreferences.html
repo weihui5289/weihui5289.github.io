@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title class="l12n">Bookmarks</title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+<link rel="stylesheet" href="Preferences.win.css">
+
+<style type="text/css">
+th
+{
+    width: 45%;
+}
+
+td
+{
+    width: 53%;
+    margin-bottom: 2em;
+}
+
+input
+{
+    margin-bottom: .6em;
+}
+
+label
+{
+    white-space: nowrap;
+    margin-right: .4em;
+}
+
+.hidden
+{
+    display: none;
+}
+</style>
+
+<script type="text/javascript">
+var BookmarkPreferences = {
+    pageLoaded: function()
+    {
+        if (navigator.platform == "Win32") {
+            document.getElementById("include-address-book-in-bar-section").style.display = "none";
+            document.getElementById("include-address-book-in-menu-section").style.display = "none";
+            document.getElementById("include-address-book-in-collections-section").style.display = "none";     
+        }
+        HTMLViewController.pageLoaded();
+        BookmarkPreferencesController.loaded(false);        
+    },
+    
+    changed: function()
+    {
+        BookmarkPreferencesController.changed();
+    }    
+}
+
+HTMLViewController.loadLocalizedStrings(BookmarkPreferencesController);
+
+</script>
+</head>
+
+<body onload="BookmarkPreferences.pageLoaded()">
+
+<table>
+  <tr>
+    <th class="l12n">Bookmarks bar:</th>
+    <td>
+        <label id="include-other-feature-in-bar-section" class="hidden">
+            <input type="checkbox" id="include-other-feature-in-bar" onchange="BookmarkPreferences.changed()"><span id="include-other-feature-in-bar-text"></span>
+        </label>
+        <label id="include-sites-in-bar-section" class="hidden">
+            <input type="checkbox" id="include-sites-in-bar" onchange="BookmarkPreferences.changed()"><span id="include-sites-in-bar-text"></span>
+        </label>
+        <label id="include-address-book-in-bar-section">
+            <input type="checkbox" id="include-address-book-in-bar" onchange="BookmarkPreferences.changed()"><span class="l12n">Include Address Book</span>
+        </label>
+        <label>
+            <input type="checkbox" id="include-bonjour-in-bar" onchange="BookmarkPreferences.changed()"><span class="l12n">Include Bonjour</span>
+        </label>
+    </td>
+  </tr>
+  
+  <tr>
+    <th class="l12n">Bookmarks menu:</th>
+    <td>
+        <label>
+            <input type="checkbox" id="include-bookmarks-bar-in-menu" onchange="BookmarkPreferences.changed()"><span class="l12n">Include bookmarks bar</span>
+        </label>
+        <label id="include-address-book-in-menu-section">
+            <input type="checkbox" id="include-address-book-in-menu" onchange="BookmarkPreferences.changed()"><span class="l12n">Include Address Book</span>
+        </label>
+        <label>
+            <input type="checkbox" id="include-bonjour-in-menu" onchange="BookmarkPreferences.changed()"><span class="l12n">Include Bonjour</span>
+        </label>
+    </td>
+  </tr>
+  
+  <tr>
+    <th class="l12n">Collections:</th>
+    <td>
+        <label id="include-address-book-in-collections-section">
+            <input type="checkbox" id="include-address-book-in-collections" onchange="BookmarkPreferences.changed()"><span class="l12n">Include Address Book</span>
+        </label>
+        <label>
+            <input type="checkbox" id="include-bonjour-in-collections" onchange="BookmarkPreferences.changed()"><span class="l12n">Include Bonjour</span>
+        </label>
+    </td>
+  </tr>
+</table>
+
+<a class="help-button" href="open-help-anchor:ibr9073"></a>
+
+</body>
+</html>

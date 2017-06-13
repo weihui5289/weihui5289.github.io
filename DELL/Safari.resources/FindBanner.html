@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+
+<style type="text/css">
+
+input, button {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: transparent;
+    min-width: 0;
+}
+
+body {
+    margin: 0;
+}
+
+#container { 
+    -webkit-box-sizing: border-box;
+    height: 25px;
+    width: 100%;
+    background-image: url("themedata:ScopeBarBackgroundPart/ActiveState/EnabledState/RegularControlSize"); 
+    background-origin: border-box;
+    background-size: 100% 100%;
+    border-bottom: 1px solid rgb(123, 128, 138);
+}
+
+#done {
+    height: 24px;
+    float: right;
+    margin-right: 6px;
+    font-size: 11px;
+}
+
+#done span {
+    position: relative;
+    top: -2px;
+}
+
+.glass-button {
+    padding: 0 2px;
+    -webkit-box-sizing: border-box;
+    -webkit-border-image: url("themedata:EmptyButton/ActiveState/EnabledState/RegularControlSize/BorderShadow") 7 7 7 7;
+    border-width: 7px;
+}
+
+.glass-button:hover {
+    -webkit-border-image: url("themedata:EmptyButton/ActiveState/EnabledState/HoveredState/RegularControlSize/BorderShadow") 7 7 7 7;
+}
+
+.glass-button:active {
+    -webkit-border-image: url("themedata:EmptyButton/ActiveState/EnabledState/HoveredState/PressedState/RegularControlSize/BorderShadow") 7 7 7 7;
+}
+
+#search-field-container {
+    float: right;
+    margin-right: 1px;
+    position: relative;
+}
+
+#search-field {
+    height: 24px;
+    width: 161px;
+    -webkit-box-sizing: border-box;
+    border-width: 7px 7px 7px 26px;
+    -webkit-border-image: url("themedata:FindFieldPart/ActiveState/EnabledState/SmallControlSize/BorderShadow") 7 7 7 26;
+    font-size: 11px;
+    padding-right: 15px;
+}
+
+#search-field:focus {
+    -webkit-border-image: url("themedata:FindFieldPart/ActiveState/EnabledState/FocusedState/SmallControlSize/BorderShadow") 7 7 7 26;
+}
+
+#search-field::-webkit-search-cancel-button, #search-field::-webkit-search-decoration {
+    display: none;
+}
+
+#search-options-menu {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 19px;
+    height: 13px;
+    opacity: 0;
+}
+
+#cancel-button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 11px;
+    height: 11px;
+    background-image: url("themedata:SmallSearchFieldCancelButton/ActiveState/EnabledState");
+    background-repeat: no-repeat;
+}
+
+#cancel-button:active {
+    background-image: url("themedata:SmallSearchFieldCancelButton/ActiveState/EnabledState/PressedState");
+}
+
+.hidden {
+    display: none;
+}
+
+#next-previous-buttons-container {
+    float: right;
+    margin-right: 3px;
+    position: relative;
+    height: 24px;
+    width: 45px;
+    -webkit-box-sizing: border-box;
+    background-image: url("themedata:BackImage/ActiveState/ForwardImage/ActiveState/RegularControlSize/BorderShadow/InsetType/FindBannerSegmentedControlSize");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#next-previous-buttons-container.enabled {
+    background-image: url("themedata:BackImage/ActiveState/EnabledState/ForwardImage/ActiveState/EnabledState/RegularControlSize/BorderShadow/InsetType/FindBannerSegmentedControlSize");
+}
+
+#next-previous-buttons-container.hover-previous {
+    background-image: url("themedata:BackImage/ActiveState/EnabledState/HoveredState/ForwardImage/ActiveState/EnabledState/RegularControlSize/BorderShadow/InsetType/FindBannerSegmentedControlSize");
+}
+
+#next-previous-buttons-container.press-previous {
+    background-image: url("themedata:BackImage/ActiveState/EnabledState/PressedState/ForwardImage/ActiveState/EnabledState/RegularControlSize/BorderShadow/InsetType/FindBannerSegmentedControlSize");
+}
+
+#next-previous-buttons-container.hover-next {
+    background-image: url("themedata:BackImage/ActiveState/EnabledState/ForwardImage/ActiveState/EnabledState/HoveredState/RegularControlSize/BorderShadow/InsetType/FindBannerSegmentedControlSize");
+}
+
+#next-previous-buttons-container.press-next {
+    background-image: url("themedata:BackImage/ActiveState/EnabledState/ForwardImage/ActiveState/EnabledState/PressedState/RegularControlSize/BorderShadow/InsetType/FindBannerSegmentedControlSize");
+}
+
+#next-previous-buttons-container button {
+    width: 20px;
+    height: 18px;
+    min-width: 0;
+    position: absolute;
+    top: 3px;
+}
+
+#previous-button {
+    left: 3px;
+}
+
+#next-button {
+    right: 3px;
+}
+
+#status {
+    font: menu;
+    color: MenuText;
+    float: right;
+    margin-top: 4px;
+    margin-right: 6px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+var FindBanner = {
+
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        FindBannerController.loaded(false);
+
+        // Set up event listeners.
+        var searchField = document.getElementById("search-field");
+        searchField.addEventListener("keydown", FindBanner._handleKeyEvent, false);
+        searchField.addEventListener("search", FindBanner._handleQueryChangedEvent, false);
+        
+        var cancelButton = document.getElementById("cancel-button");
+        cancelButton.addEventListener("mousedown", function(e) { FindBanner.focusSearchFieldAndSelectAllText(); e.preventDefault(); }, false);
+        cancelButton.addEventListener("mouseup", function(e) { FindBanner._clearSearchField(); }, false);
+        
+        var doneButton = document.getElementById("done");
+        doneButton.addEventListener("click", function(e) { FindBannerController.donePressed(); }, false);
+        
+        var previousButton = document.getElementById("previous-button");
+        previousButton.addEventListener("mouseover", FindBanner._handleMouseEvent, false);
+        previousButton.addEventListener("mouseout", FindBanner._handleMouseEvent, false);
+        previousButton.addEventListener("mousedown", FindBanner._handleMouseEvent, false);
+        previousButton.addEventListener("mouseup", FindBanner._handleMouseEvent, false);
+        previousButton.addEventListener("click", function(e) { FindBannerController.previousButtonPressed(); FindBanner.focusSearchFieldAndSelectAllText(); }, false);
+
+        var nextButton = document.getElementById("next-button");
+        nextButton.addEventListener("mouseover", FindBanner._handleMouseEvent, false);
+        nextButton.addEventListener("mouseout", FindBanner._handleMouseEvent, false);
+        nextButton.addEventListener("mousedown", FindBanner._handleMouseEvent, false);
+        nextButton.addEventListener("mouseup", FindBanner._handleMouseEvent, false);
+        nextButton.addEventListener("click", function(e) { FindBannerController.nextButtonPressed(); FindBanner.focusSearchFieldAndSelectAllText(); }, false);
+        
+        var searchOptionsMenu = document.getElementById("search-options-menu");
+        searchOptionsMenu.addEventListener("mousedown", FindBanner._handleSearchOptionsMenuPressed, false);
+    },
+
+    focusSearchFieldAndSelectAllText: function()
+    {
+        var searchField = document.getElementById("search-field");
+        searchField.focus();
+        searchField.select();
+    },
+    
+    searchFieldHasFocus: function()
+    {
+        var focusedSearchField = document.querySelector("#search-field:focus");
+        return focusedSearchField != null;
+    },
+
+    getSearchQuery: function()
+    {
+        return document.getElementById("search-field").value;
+    },
+    
+    setSearchQuery: function(query)
+    {
+        document.getElementById("search-field").value = query;
+        FindBanner._updateCancelButtonStatus();
+    },
+
+    setStatusText: function(text)
+    {
+        document.getElementById("status").textContent = text;
+    },
+    
+    enablePreviousNextControl: function()
+    {
+        document.getElementById("next-previous-buttons-container").className = "enabled";
+        document.getElementById("previous-button").disabled = false;
+        document.getElementById("next-button").disabled = false;
+    },
+
+    disablePreviousNextControl: function()
+    {
+        document.getElementById("next-previous-buttons-container").className = "";
+        document.getElementById("previous-button").disabled = true;
+        document.getElementById("next-button").disabled = true;
+    },
+    
+    _clearSearchField: function()
+    {
+        FindBanner.setSearchQuery("");
+        FindBannerController.searchQueryChanged();
+    },
+    
+    _updateCancelButtonStatus: function()
+    {
+        var query = FindBanner.getSearchQuery();
+        var cancelButton = document.getElementById("cancel-button");
+        if (!query)
+            cancelButton.className = "hidden";
+        else
+            cancelButton.className = "";
+    },
+
+    _handleKeyEvent: function(e)
+    {
+        // Escape key
+        if (e.keyCode == 27) {
+            FindBannerController.searchCancelled();
+            return;
+        }
+
+        // Enter key
+        if (e.keyCode == 13) {
+            FindBannerController.finalizeSearchQueryAndHighlightMatch(!e.shiftKey);
+            e.preventDefault();
+            return;
+        }
+        
+        // Tab key
+        if (e.keyCode == 9) {
+            FindBannerController.advanceFocus(!e.shiftKey);
+            e.preventDefault();
+            return;
+        }
+    },
+
+    _handleQueryChangedEvent: function(e)
+    {
+        FindBanner._updateCancelButtonStatus();
+        FindBannerController.searchQueryChanged();   
+    },
+    
+    _handleMouseEvent: function(e)
+    {
+        e.preventDefault();
+        
+        var container = document.getElementById("next-previous-buttons-container");
+        
+        // Check if next button is pressed.
+        if (container.querySelector("#next-button:active")) {
+            container.className = "press-next";
+            return;
+        }
+        
+        // Check if the previous button is pressed.
+        if (container.querySelector("#previous-button:active")) {
+            container.className = "press-previous";
+            return;
+        }
+        
+        // Check if next button is hovered.
+        if (container.querySelector("#next-button:hover")) {
+            container.className = "hover-next";
+            return;
+        }
+
+        // Check if previous button is hovered.
+        if (container.querySelector("#previous-button:hover")) {
+            container.className = "hover-previous";
+            return;
+        }
+        
+        if (document.getElementById("next-button").disabled)
+            container.className = "";
+        else
+            container.className = "enabled";
+    },
+    
+    _handleSearchOptionsMenuPressed: function(e)
+    {
+        e.preventDefault();
+        FindBannerController.showSearchOptionsMenu();
+    },
+}
+
+HTMLViewController.loadLocalizedStrings(FindBannerController);
+
+</script>
+
+</head>
+
+<body onload="FindBanner.pageLoaded()">
+
+<div id="container">
+    <button id="done" class="glass-button" tabindex="-1"><span class="l12n">Done</span></button>
+    <div id="search-field-container">
+        <div id="search-options-menu"></div>
+        <input type="search" incremental id="search-field" />
+        <input type="button" id="cancel-button" class="hidden" />
+    </div>
+    <div id="next-previous-buttons-container">
+        <button id="next-button" disabled tabindex="-1"></button>
+        <button id="previous-button" disabled tabindex="-1"></button>
+    </div>
+    <span id="status"></span>
+</div>
+
+</body>
+</html>

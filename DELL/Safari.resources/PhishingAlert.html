@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style>
+    * {
+        -webkit-box-sizing: border-box;
+    }
+
+    html {
+        display: table;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    body {
+        -webkit-background-composite: copy;
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        padding: 20px;
+        -webkit-user-select: none;
+        -webkit-text-size-adjust: none;
+        cursor: default;
+    }
+
+    .alert {
+        position: relative;
+        width: 570px;
+        margin: 0 auto;
+    }
+
+    .alert.malware .phishing {
+        display: none;
+    }
+
+    .alert.malware .userinfo {
+        display: none;
+    }
+    
+    .alert.phishing .malware {
+        display: none;
+    }
+    
+    .alert.phishing .userinfo {
+        display: none;
+    }
+
+    .alert.userinfo .malware {
+        display: none;
+    }
+    
+    .alert.userinfo .phishing {
+        display: none;
+    }
+    
+    .alert-body {
+        -webkit-border-image: url(PhishingAlertBase.png) 0 0 10 0;
+        border-width: 0 0 10px 0;
+        padding-top: 1px;
+    }
+
+    .alert-body p:first-of-type {
+        margin-top: 26px;
+    }
+
+    .alert-body p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        background-image: url(PhishingAlertTitlebar.png);
+        background-repeat: no-repeat;
+        background-size: 570px 38px;
+        height: 38px;
+        text-align: center;
+        font-family: Lucida Grande, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 39px;
+        color: white;
+        text-shadow: rgb(43, 0, 1) 0 -1px 0;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    p {
+        font-family: Lucida Grande, sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        padding: 0 78px;
+        word-wrap: break-word;
+    }
+
+    a {
+        font-weight: bold;
+        color: inherit;
+        line-height: 20px;
+    }
+
+    .button-bar {
+        text-align: right;
+        margin-bottom: 0;
+        padding: 0 10px;
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .button-bar button {
+        font-family: Lucida Grande, sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+        min-width: 90px;
+        margin: 0 0 0 10px;
+        vertical-align: bottom;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .button-bar.goBack .closePage, .button-bar.closePage .goBack {
+        display: none;
+    }
+
+    button.default {
+        -webkit-appearance: default-button;
+    }
+
+    @media (-webkit-min-device-pixel-ratio:2) {
+        .alert-body {
+            -webkit-border-image: url(PhishingAlertBase@2x.png) 0 0 20 0;
+        }
+
+        h1 {
+            background-image: url(PhishingAlertTitlebar@2x.png);
+        }
+    }
+    </style>
+    <script type="text/javascript" src="Utilities.js" charset="utf-8"></script>
+    <script type="text/javascript" src="HTMLViewController.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        const googleMalwareDetailsURL = "http://google.com/safebrowsing/diagnostic?tpl=safari";
+        const reportAnErrorURL = "http://www.google.com/safebrowsing/report_error/?tpl=safari&continue=http%3A%2F%2Fwww.apple.com%2Fsafari%2Fantiphishing%2Freport_submitted.html";
+        const learnMoreAboutPhishingFromGoogleURL = "http://www.google.com/support/bin/answer.py?answer=106318";
+
+        var PhishingAlert = {
+            _host: undefined,
+            _source: undefined,
+            _type: undefined,
+            _currentURL: undefined,
+
+            get host()
+            {
+                return this._host
+            },
+
+            set host(value)
+            {
+                if (this._host === value)
+                    return;
+                this._host = value;
+                if (this.source === "google" && this.type === "malware")
+                    this.updateGoogleMalwareDetails();
+            },
+
+            get currentURL()
+            {
+                return this._currentURL;
+            },
+
+            set currentURL(value)
+            {
+                if (this._currentURL === value)
+                    return;
+                this._currentURL = value;
+
+                document.getElementById("report-an-error").href = "%@&url=%@&hl=%@".format(reportAnErrorURL, escape(this.currentURL), navigator.language);
+            },
+
+            get source()
+            {
+                return this._source;
+            },
+
+            set source(value)
+            {
+                this._source = value;
+            },
+
+            get type()
+            {
+                return this._type;
+            },
+
+            set type(value)
+            {
+                this._type = value;
+            },
+
+            pageLoaded: function()
+            {
+                HTMLViewController.pageLoaded();
+                PhishingAlertController.loaded();
+            },
+
+            updateUI: function(source, type, host, canGoBack, currentURL)
+            {
+                if (this.source != source || this.type != type) {
+                    document.getElementById("alert").className = "alert " + type + " " + source;
+                    this.source = source;
+                    this.type = type;
+                }
+
+                if (type === "phishing")
+                    document.title = HTMLViewController.UIString("Suspected Phishing Site");
+                else if (type == "userinfo")
+                    document.title = HTMLViewController.UIString("Possible Phishing Site");
+                else if (type === "malware")
+                    document.title = HTMLViewController.UIString("Suspected Malware Site");
+                else
+                    console.error("Unknown type (%s) passed to updateUI.", type);
+
+                if (canGoBack) {
+                    HTMLViewController.addClass("button-bar", "goBack");
+                    HTMLViewController.removeClass("button-bar", "closePage");
+                } else {
+                    HTMLViewController.addClass("button-bar", "closePage");
+                    HTMLViewController.removeClass("button-bar", "goBack");
+                }
+
+                this.host = host;
+                this.currentURL = currentURL;
+
+                document.getElementById("learn-more-phishing").href = "%@&hl=%@".format(learnMoreAboutPhishingFromGoogleURL, navigator.language);
+
+                var elements = document.getElementsByClassName("size-font-to-fit");
+                for (var i = 0; i < elements.length; ++i) {
+                    var element = elements[i];
+
+                    element.style.removeProperty("font-size");
+
+                    if (element.offsetHeight <= element.parentNode.offsetHeight)
+                        continue;
+
+                    var computedStyle = window.getComputedStyle(element, "");
+                    var fontSize = computedStyle.getPropertyCSSValue("font-size").getFloatValue(CSSPrimitiveValue.CSS_PX);
+
+                    do {
+                        --fontSize;
+                        element.style.setProperty("font-size", fontSize + "px", "");
+                    } while (element.offsetHeight > element.parentNode.offsetHeight);
+                }
+            },
+
+            updateGoogleMalwareDetails: function()
+            {
+                var details = document.getElementById("google-malware-details");
+                var localizedText = HTMLViewController.UIString("For detailed information about problems found on this site, or a portion of this site, visit the Google Safe Browsing diagnostic page for %@.");
+                var linkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(googleMalwareDetailsURL, escape(this.host), navigator.language, this.host);
+                details.innerHTML = localizedText.format(linkHTML);
+            }
+        };
+
+        HTMLViewController.loadLocalizedStrings(PhishingAlertController);
+        window.addEventListener("load", function() { PhishingAlert.pageLoaded(); }, false);
+    </script>
+</head>
+<body>
+<div id="alert" class="alert phishing google">
+    <h1 class="phishing"><span class="l12n size-font-to-fit">Warning: Suspected phishing site</span></h1>
+    <h1 class="userinfo"><span class="l12n size-font-to-fit">Warning: Possible phishing site</span></h1>
+    <h1 class="malware"><span class="l12n size-font-to-fit">Warning: Visiting this site may harm your computer</span></h1>
+    <div class="alert-body">
+        <p class="malware l12n">The website you are visiting appears to contain malware. Malware is malicious software that may harm your computer or otherwise operate without your consent. Your computer can be infected just by browsing to a site with malware, without any further action on your part.</p>
+        <p class="malware google" id="google-malware-details"></p>
+        <p class="phishing l12n">The website you are visiting has been reported as a “phishing” website. These websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank.</p>
+        <p class="phishing google">
+            <a class="l12n" id="learn-more-phishing">Learn more about phishing scams</a><br>
+            <a class="l12n" id="report-an-error">Report an error</a>
+        </p>
+        <p class="userinfo l12n">The address for the website you’re visiting contains a username or password. This may be a “phishing” website. Phishing websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank’s.</p>
+        <div class="button-bar goBack closePage" id="button-bar">
+            <button type="button" class="l12n" onClick="PhishingAlertController.ignoreWarningSelected();">Ignore Warning</button>
+            <button type="submit" class="l12n default goBack" onClick="PhishingAlertController.goBackSelected();">Go Back</button>
+            <button type="submit" class="l12n default closePage" onClick="PhishingAlertController.closePageSelected();">Close Page</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+object {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 14px;
+}
+
+#urlFieldWrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    width: 90%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fullWidth {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* This is needed for using fullWidth on tables */
+    width: 100%;
+}
+
+.button.disabled {
+    opacity: 0.25;
+}
+
+/* When pressing a button that is not disabled, show a press state */
+.button:active:not(.disabled) {
+    opacity: 0.6;
+}

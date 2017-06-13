@@ -1,0 +1,5916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ad</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Andorra</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Andorra</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ae</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>United Arab Emirates</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic United Arab Emirates</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>af</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Afghanistan</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Afghanistan</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+	</dict>
+	<key>ag</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Antigua and Barbuda</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Antigua and Barbuda</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>al</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Albania</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Albania</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>am</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Armenia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Armenia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ao</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Angola</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Angola</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ar</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Argentina</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Argentina</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>at</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Austria</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Austria</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>au</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Australia</string>
+		<key>City</key>
+		<string>Suburb</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City State ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Australia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>az</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Azerbaijan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Azerbaijan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ba</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bosnia and Herzegovina</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bosnia and Herzegovina</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bb</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Barbados</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Barbados</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bd</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Banglaesh</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bangladesh</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>be</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Belgium</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Belgium</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bf</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Burkina Faso</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Burkina Faso</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bulgaria</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bulgaria</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bh</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bahrain</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bahrain</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bi</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Burundi</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Burundi</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bj</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Benin</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Benin</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bermuda</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bermuda</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Brunei Darussalam</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Brunei Darussalam</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bo</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bolivia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bolivia</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>br</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Brazil</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Brazil</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>ZIP</string>
+	</dict>
+	<key>bs</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bahamas</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bahamas</string>
+		<key>State</key>
+		<string>Island Name</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bt</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bhutan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bhutan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Bostwana</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Bostwana</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>by</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Belarus</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Belarus</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>bz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Belize</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Belize</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ca</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Canada</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City State ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Canada</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+		<key>kbdSettings</key>
+		<dict>
+			<key>ZIP</key>
+			<dict>
+				<key>caps</key>
+				<string>All</string>
+				<key>fmt</key>
+				<string>Alpha</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>cd</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Democratic Republic of the Congo</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Democratic Republic of the Congo</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cf</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Central African Republic</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Central African Republic</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Congo</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Congo</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ch</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Switzerland</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Switzerland</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ci</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Côte d’Ivoire</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Côte d’Ivoire</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cl</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Chile</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Chile</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Cameroon</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Cameroon</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>China</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Country
+State City
+Street 
+ZIP</string>
+		<key>FORMAT</key>
+		<string>Country
+State City
+Street 
+ZIP</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic China</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>co</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Colombia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Colombia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Costa Rica</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Costa Rica</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cu</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Cuba</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Cuba</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cv</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Cape Verde</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Cape Verde</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cy</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Cyprus</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Cyprus</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>cz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Czech</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Czech</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>de</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Germany</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Germany</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>defaultKbdSettings</key>
+	<dict>
+		<key>COUNTRY</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>City</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Country</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>County</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>DEFAULT</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Department</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>District/Subdivision</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>DistrictTown</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Further Divisions</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Governorate</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Island Name</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Name Sama</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>PINCode</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Num</string>
+		</dict>
+		<key>PostalCode</key>
+		<dict>
+			<key>caps</key>
+			<string>None</string>
+			<key>fmt</key>
+			<string>Num</string>
+		</dict>
+		<key>PostalDistrict</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Postcode</key>
+		<dict>
+			<key>caps</key>
+			<string>None</string>
+			<key>fmt</key>
+			<string>Num</string>
+		</dict>
+		<key>Prefecture</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Province</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Region</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>State</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>State/Republic</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Street</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Suburb</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Territorial Subdivision</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>Village</key>
+		<dict>
+			<key>caps</key>
+			<string>Word</string>
+			<key>fmt</key>
+			<string>Alpha</string>
+		</dict>
+		<key>ZIP</key>
+		<dict>
+			<key>caps</key>
+			<string>None</string>
+			<key>fmt</key>
+			<string>Num</string>
+		</dict>
+	</dict>
+	<key>dj</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Djibouti</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Djibouti</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>dk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Denmark</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Denmark</string>
+		<key>State</key>
+		<string>Village</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>dm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Dominica</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Dominica</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>do</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Dominican Republic</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Dominican Republic</string>
+		<key>State</key>
+		<string>PostalDistrict</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>dz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Algeria</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Algeria</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ec</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Ecuador</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Ecuador</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ee</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Estonia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Estonia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>eg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Egypt</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Egypt</string>
+		<key>City</key>
+		<string>Governorate</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+	</dict>
+	<key>er</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Eritrea</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Eritrea</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>es</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Spain</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Spain</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>et</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Ethiopia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Ethiopia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>fi</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Finland</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Finland</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>fj</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Fiji</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Fiji</string>
+		<key>State</key>
+		<string>PostalDistrict</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>fk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Falkland Islands</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Falkland Islands</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>fo</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Faroe Islands</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Faroe Islands</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>fr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>France</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic France</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ga</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Gabon</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Gabon</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gb</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>United Kingdom</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+State
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic United Kingdom</string>
+		<key>State</key>
+		<string>County</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>Postcode</string>
+		<key>kbdSettings</key>
+		<dict>
+			<key>ZIP</key>
+			<dict>
+				<key>caps</key>
+				<string>All</string>
+				<key>fmt</key>
+				<string>Alpha</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>gd</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Grenada</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Grenada</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ge</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Georgia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Georgia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gh</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Ghana</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Ghana</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+	</dict>
+	<key>gl</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Greenland</string>
+		<key>City</key>
+		<string>PostalDistrict</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Greenland</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Gambia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Gambia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Guinea</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Guinea</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gq</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Equatorial Guinea</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Equatorial Guinea</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Greece</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Greece</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gs</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>South Georgia and South Sandwich Islands</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic South Georgia and South Sandwich Islands</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gt</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Guatemala</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Guatemala</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Guinea-Bissau</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Guinea-Bissau</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>gy</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Guyana</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Guyana</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>hk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Hong Kong</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Hong Kong</string>
+		<key>EDIT_FORMAT</key>
+		<string>Country
+State City
+Street</string>
+		<key>FORMAT</key>
+		<string>Country
+State City
+Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>State</key>
+		<string>District</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>ZIP</key>
+		<string>Postal Code</string>
+	</dict>
+	<key>hn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Honduras</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Honduras</string>
+		<key>State</key>
+		<string>Department</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>hr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Croatia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Croatia</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ht</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Haiti</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Haiti</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>hu</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Hungary</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>ZIP City
+Street
+Street2
+Country</string>
+		<key>FORMAT</key>
+		<string>ZIP City
+Street
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Hungary</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>ZIP, City, Street, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>id</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Indonesia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+State ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Indonesia</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ie</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Ireland</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City State ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Ireland</string>
+		<key>State</key>
+		<string>County</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>il</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Israel</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Israel</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>im</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Isle of Man</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Isle of Man</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>in</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>India</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic India</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, City ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PINCode</string>
+	</dict>
+	<key>iq</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Iraq</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Iraq</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ir</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Iran</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Iran</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>is</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Iceland</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Iceland</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>it</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Italy</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Italy</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>jp</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Japan</string>
+		<key>City</key>
+		<string>County/CityJP</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>ZIP
+State City
+Street
+Street2
+Country</string>
+		<key>FORMAT</key>
+		<string>ZIP
+State City
+Street
+Country</string>
+		<key>LABEL_FORMAT</key>
+		<string>ZIP
+State City
+Street
+Country
+Name Sama</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Japan</string>
+		<key>Sama</key>
+		<string>様</string>
+		<key>State</key>
+		<string>Prefecture</string>
+		<key>Street</key>
+		<string>Further Divisions</string>
+		<key>URL_FORMAT</key>
+		<string>ZIP, State, City, Street, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>jm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Jamaica</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Jamaica</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>jo</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Jordan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Region
+State
+Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Region
+State
+Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Jordan</string>
+		<key>Region</key>
+		<string>Region</string>
+		<key>State</key>
+		<string>PostalDistrict</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Region, State, Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ke</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Kenya</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Kenya</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>kg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Kyrgyzstan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>ZIP City
+Street
+Street2
+Country</string>
+		<key>FORMAT</key>
+		<string>ZIP City
+Street
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Kyrgyzstan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>ZIP, City, Street, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>kh</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Cambodia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Cambodia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ki</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Kiribati</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Kiribati</string>
+		<key>State</key>
+		<string>Island Name</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>km</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Comoros</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Comoros</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>kp</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>North Korea</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic North Korea</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>kr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>South Korea</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>ZIP
+Country
+State City
+Street
+Street2</string>
+		<key>FORMAT</key>
+		<string>ZIP
+Country
+State City
+Street</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic South Korea</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>kw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Kuwait</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Kuwait</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ky</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Cayman Islands</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Cayman Islands</string>
+		<key>State</key>
+		<string>Island Name</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>kz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Kazakhstan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State
+Region
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City State
+Region
+Country
+ZIP</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Kazakhstan</string>
+		<key>Region</key>
+		<string>Province</string>
+		<key>State</key>
+		<string>PostalDistrict</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, Region, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>la</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Lao People’s Democratic Republic</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Lao People’s Democratic Republic</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lb</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Lebanon</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Lebanon</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lc</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Saint Lucia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Saint Lucia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>li</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Liechtenstein</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Liechtenstein</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Sri Lanka</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Saint Lucia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Liberia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Liberia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ls</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Lesotho</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Lesotho</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lt</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Lithuania</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Lithuania</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lu</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Luxembourg</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Luxembourg</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>lv</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Latvia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Latvia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ly</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Lybian Jamahiriya</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Lybian Jamahiriya</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ma</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Morocco</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Morocco</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mc</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Monaco</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Monaco</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>md</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Moldova</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Moldova</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>me</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Montenegro</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Montenegro</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Madagascar</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Madagascar</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Macedonia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Macedonia</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ml</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Mali</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Mali</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Myanmar</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Myanmar</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Mongolia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Mongolia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mo</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Macao</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Macao</string>
+		<key>EDIT_FORMAT</key>
+		<string>Country
+State City
+Street</string>
+		<key>FORMAT</key>
+		<string>Country
+State City
+Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>State</key>
+		<string>District</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>ZIP</key>
+		<string>Postal Code</string>
+	</dict>
+	<key>mr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Mauritania</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Mauritania</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mt</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Malta</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Malta</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mu</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Mauritius</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Mauritius</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mv</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Maldives</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Maldives</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Malawi</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Malawi</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mx</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Mexico</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Mexico</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>my</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Malaysia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Malaysia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>mz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Mozambique</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Mozambique</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>na</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Namibia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Namibia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>nc</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>New Caledonia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic New Caledonia</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ne</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Niger</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Niger</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ng</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Nigeria</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Nigeria</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ni</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Nicaragua</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP
+City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP
+City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Nicaragua</string>
+		<key>State</key>
+		<string>Department</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>nl</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Netherlands</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Netherlands</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>no</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Norway</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Norway</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>np</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Nepal</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Nepal</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>nr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Nauru</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Nauru</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>nz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>New Zealand</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic New Zealand</string>
+		<key>State</key>
+		<string>Suburb</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>om</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Oman</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP
+City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP
+City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Oman</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>pa</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Panama</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Panama</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>pe</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Peru</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Peru</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>pf</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>French Polynesia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic French Polynesia</string>
+		<key>State</key>
+		<string>Island Name</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>pg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Papua New Guinea</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Papua New Guinea</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ph</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Philippines</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street State
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street State
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Philippines</string>
+		<key>State</key>
+		<string>District/Subdivision</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>Postcode</string>
+	</dict>
+	<key>pk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Pakistan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Pakistan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>pl</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Poland</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Poland</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>pt</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Portugal</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Portugal</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>py</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Paraguay</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Paraguay</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>qa</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Qatar</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Qatar</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ro</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Romania</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Romania</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>rs</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Serbia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Serbia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ru</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Russian Federation</string>
+		<key>City</key>
+		<string>City/Region</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2City
+State
+Country
+ZIP</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State
+Country
+ZIP</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Russian Federation</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, Country, ZIP</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>rw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Rwanda</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Rwanda</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sa</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Saudi Arabia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Saudi Arabia</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sb</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Solomon Islands</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Solomon Islands</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sc</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Seychelles</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Seychelles</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sd</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Sudan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Sudan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>se</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Sweden</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Sweden</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Singapore</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Singapore</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sh</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Saint Helena</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Saint Helena</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>si</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Slovenia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Slovenia</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sk</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Slovakia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Slovakia</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sl</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Sierra Leone</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Sierra Leone</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Senegal</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Senegal</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>so</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Somalia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State  ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City State  ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Somalia</string>
+		<key>State</key>
+		<string>Region</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Suriname</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Suriname</string>
+		<key>State</key>
+		<string>PostalDistrict</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>st</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Sao Tome and Principe</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Sao Tome and Principe</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sv</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>El Salvador</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic El Salvador</string>
+		<key>State</key>
+		<string>Department</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sy</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Syrian Arab Republic</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Syrian Arab Republic</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>sz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Swaziland</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Swaziland</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>td</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Chad</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Chad</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tg</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Togo</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Togo</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>th</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Thailand</string>
+		<key>City</key>
+		<string>Province</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Thailand</string>
+		<key>State</key>
+		<string>District/Subdivision</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tj</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Tajikistan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Tajikistan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tl</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Timor-Leste</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Timor-Leste</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Turkmenistan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Turkmenistan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Tunisia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Tunisia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>to</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Tonga</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Tonga</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tr</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Turkey</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Turkey</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tt</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Trinidad and Tobago</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Trinidad and Tobago</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tv</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Tuvalu</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Tuvalu</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>tw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Taiwan</string>
+		<key>City</key>
+		<string>Township/District</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Country
+ZIP State City
+Street</string>
+		<key>FORMAT</key>
+		<string>Country
+ZIP State City
+Street</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Taiwan</string>
+		<key>State</key>
+		<string>County/CityTW</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>ZIP</string>
+	</dict>
+	<key>tz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>United Republic of Tanzania</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic United Republic of Tanzania</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ua</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Ukraine</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Region State
+ZIP
+Country</string>
+		<key>EDIT_WEIGHTS</key>
+		<dict>
+			<key>Region</key>
+			<string>0.4</string>
+		</dict>
+		<key>FORMAT</key>
+		<string>Street
+City Region State
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Ukraine</string>
+		<key>Region</key>
+		<string>PostalDistrict</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Region, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ug</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Uganda</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Uganda</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>us</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>United States</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City State ZIP
+Country</string>
+		<key>EDIT_WEIGHTS</key>
+		<dict>
+			<key>City</key>
+			<string>0.5</string>
+			<key>ZIP</key>
+			<string>0.3</string>
+		</dict>
+		<key>FORMAT</key>
+		<string>Street
+City State ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic United States</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>ZIP</string>
+		<key>kbdSettings</key>
+		<dict>
+			<key>State</key>
+			<dict>
+				<key>caps</key>
+				<string>All</string>
+				<key>fmt</key>
+				<string>Alpha</string>
+				<key>suggest</key>
+				<string>never</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>uy</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Uruguay</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Uruguay</string>
+		<key>State</key>
+		<string>Department</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>uz</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Uzbekistan</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country
+ZIP</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country
+ZIP</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Uzbekistan</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>va</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Vatican</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Vatican</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>vc</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Saint Vincent and the Grenadines</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Saint Vincent and the Grenadines</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ve</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Venezuela</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City ZIP State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City ZIP State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Venezuela</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, ZIP, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>vn</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Viet Nam</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+State
+City ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+State
+City ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Viet Nam</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, State, City, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>vu</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Vanuatu</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Vanuatu</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ws</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Samoa</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Samoa</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>ye</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Yemen</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Yemen</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>yu</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Serbia and Montenegro</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+
+State
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+
+State
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Serbia and Montenegro</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, State, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>za</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>South Africa</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+State
+ZIP
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+State
+ZIP
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic South Africa</string>
+		<key>State</key>
+		<string>Province</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, State, ZIP, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>zm</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Zambia</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+ZIP City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+ZIP City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Zambia</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, ZIP, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+	<key>zw</key>
+	<dict>
+		<key>COUNTRY</key>
+		<string>Zimbabwe</string>
+		<key>City</key>
+		<string>City</string>
+		<key>Country</key>
+		<string>Country</string>
+		<key>EDIT_FORMAT</key>
+		<string>Street
+Street2
+City
+Country</string>
+		<key>FORMAT</key>
+		<string>Street
+City
+Country</string>
+		<key>PHONETIC_COUNTRY</key>
+		<string>Phonetic Zimbabwe</string>
+		<key>State</key>
+		<string>State</string>
+		<key>Street</key>
+		<string>Street</string>
+		<key>URL_FORMAT</key>
+		<string>Street, City, Country</string>
+		<key>ZIP</key>
+		<string>PostalCode</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title></title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+
+<style type="text/css">
+html
+{
+  width: 480px;
+  min-height: 160px;
+}
+
+body
+{
+  margin-bottom: 60px;
+}
+
+#icon
+{
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin: 0 10px 0 0;
+  background-image: url(compass64.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#icon.critical
+{
+  background-image: url(SafariAlert.png);
+}
+
+#icon.security
+{
+  background-image: url(SecurityAlert.png);
+}
+
+.contents-group-shifted
+{
+  margin-left: 75px;
+}
+
+#description
+{
+  margin-bottom: 15px;
+}
+
+.hide
+{
+  display: none;
+}
+
+#prompt-edit
+{
+  width: 100%;
+}
+
+</style>
+
+<script type="text/javascript">
+var AlertDialog = {
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        AlertDialogController.loaded();
+    },
+    
+    cancelSelected: function()
+    {
+        AlertDialogController.cancelSelected();
+    },
+    
+    okSelected: function()
+    {
+        AlertDialogController.okSelected();
+    },
+    
+    thirdButtonSelected: function()
+    {
+        AlertDialogController.thirdButtonSelected();
+    },
+    
+    setIconImageURL: function(url)
+    {
+        document.getElementById("icon").style.backgroundImage = "url('" + url + "')";
+    }
+}
+
+HTMLViewController.loadLocalizedStrings(AlertDialogController);
+
+</script>
+</head>
+
+<body onload="AlertDialog.pageLoaded()">
+<div id="icon">
+</div>
+<div class="contents-group-shifted" id="contents-group">
+<h1 id="alert-title"></h1>
+<p id="description"></p>
+<textarea rows="3" id="prompt-edit"></textarea>
+<input type="checkbox" id="alert-checkbox"><label id="alert-checkbox-label" for="alert-checkbox"></label>
+</div>
+<div class="action-group">
+<button id="ok-button" class="action l12n" onclick="AlertDialog.okSelected()" type="submit">Done</button>
+<button id="cancel-button" class="action l12n" onclick="AlertDialog.cancelSelected()" type="button">Cancel</button>
+</div>
+<a class="help-button" id="help"></a>
+</body>
+</html>

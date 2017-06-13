@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <script type="text/javascript" src="HTMLViewController.js"></script>
+    <script type="text/javascript" src="Utilities.js"></script>
+    <style>
+        .container {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        #innerContainer {
+            overflow: hidden;
+        }
+
+        #listContainer {
+            min-height: 100%;
+            bottom: auto;
+            width: 160px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-right: solid 1px rgb(203, 203, 203);
+            outline: none;
+        }
+
+        #contentContainer {
+            left: 160px;
+            min-height: 100%;
+            overflow: hidden;
+            outline: none;
+        }
+    </style>
+    </head>
+
+    <body onload="AddressBookEntryView.pageLoaded()">
+        <div id="mainContainer" class="container">
+            <div id="innerContainer" class="container">
+                <div id="listContainer" class="container" tabIndex=1 onfocus="AddressBookEntryView.focusListView(event)">
+                    Left Pane
+                </div>
+                <div id="contentContainer" class="container" tabIndex=2>
+                    Right Pane
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mappings</key>
+	<array>
+		<dict>
+			<key>ABProperty</key>
+			<string>First</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>for-</string>
+				<string>fornavn</string>
+				<string>fnavn</string>
+				<string>f-navn</string>
+				<string>døpenavn</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Middle</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>forbokstav, mellomnavn</string>
+				<string>initial, mellomnavn</string>
+				<string>mellomnavn</string>
+				<string>m-navn</string>
+				<string>mellom-</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Last</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>etter-</string>
+				<string>etternavn</string>
+				<string>enavn</string>
+				<string>e-navn</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ProxyABProperty</key>
+			<string>FullNameComposite</string>
+			<key>ABComputedProperty</key>
+			<string>_realCompositeName</string>
+			<key>ABProperty</key>
+			<array>
+				<string>For</string>
+				<string>Mellom</string>
+				<string>Etter</string>
+				<string>Suffiks</string>
+			</array>
+			<key>FieldLabels</key>
+			<array>
+				<string>fulltnavn</string>
+				<string>fullt navn</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ProxyABProperty</key>
+			<string>FullNameComposite</string>
+			<key>ABComputedProperty</key>
+			<string>_realCompositeName</string>
+			<key>ABProperty</key>
+			<array>
+				<string>For</string>
+				<string>Mellom</string>
+				<string>Etter</string>
+				<string>Suffiks</string>
+			</array>
+			<key>FieldLabels</key>
+			<array>
+				<string>name</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Birthday</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>bursdag</string>
+				<string>fødselsdato</string>
+				<string>fødselsdag</string>
+				<string>født</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>JobTitle</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>stilling</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Email</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>e-post</string>
+				<string>e-postadr</string>
+				<string>e-postadresse</string>
+				<string>epost</string>
+				<string>mail</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>Street</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>gate</string>
+				<string>gateadresse</string>
+				<string>vei</string>
+				<string>veiadresse</string>
+				<string>angiAdresseAdresselinje</string>
+				<string>adresse1</string>
+				<string>adresse 1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>Street</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>adresse</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>City</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>poststed</string>
+				<string>sted</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>State</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>delstat</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>ZIP</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>postnummer</string>
+				<string>postnr.</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>ABKey</key>
+			<string>Country</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>land</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Home&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>hjemmetelefon</string>
+				<string>telefon, hjem</string>
+				<string>kveldstelefon</string>
+				<string>telefon, kveldstid</string>
+				<string>retningsnummer, hjem</string>
+				<string>retningsnummer, kveld</string>
+				<string>retningsnummer, kveldstid</string>
+				<string>kveldsretningsnummer</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Work&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>telefon, arbeid</string>
+				<string>telefon, jobb</string>
+				<string>dagtelefon</string>
+				<string>telefon, dag</string>
+				<string>telefon, dagtid</string>
+				<string>jobbtelefon</string>
+				<string>telefon, arbeid</string>
+				<string>telefon, jobb</string>
+				<string>arbeidstelefon</string>
+				<string>retningsnummer, jobb</string>
+				<string>retningsnummer, arbeid</string>
+				<string>jobbretningsnummer</string>
+				<string>retningsnummer, dagtid</string>
+				<string>retningsnummer, dag</string>
+				<string>dagretningsnummer</string>
+				<string>retningsnummer, firma</string>
+				<string>firmaretningsnummer</string>
+				<string>retningsnummer, bedrift</string>
+				<string>retningsnummer, selskap</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Mobile&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>mobiltelefon</string>
+				<string>telefon, mobil</string>
+				<string>mobil</string>
+				<string>retningsnummer, mobiltelefon</string>
+				<string>retningsnummer, mobil</string>
+				<string>mobilretningsnummer</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>ABLabel</key>
+			<string>_$!&lt;Pager&gt;!$_</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>personsøkernummer</string>
+				<string>personsøkernr.</string>
+				<string>retningsnummer, personsøker</string>
+				<string>retningsnr., personsøker</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>retningsnummer</string>
+				<string>retningsnr.</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>tlf.</string>
+				<string>telefonnummer</string>
+				<string>telefonnr.</string>
+				<string>telefon</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>faks</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Organization</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>organisasjon</string>
+				<string>selskap</string>
+			</array>
+		</dict>
+	</array>
+	<key>Synonyms</key>
+	<dict>
+		<key>Address</key>
+		<dict>
+			<key>Country</key>
+			<array>
+				<array>
+					<string>USA</string>
+					<string>US</string>
+					<string>United States</string>
+					<string>United States of America</string>
+				</array>
+				<array>
+					<string>UK</string>
+					<string>Storbritannia</string>
+				</array>
+			</array>
+			<key>State</key>
+			<array>
+				<array> <string>Alabama</string> <string>AL</string> </array>
+				<array> <string>Alaska</string> <string>AK</string> </array>
+				<array> <string>Alberta</string> <string>AB</string> </array>
+				<array> <string>Arizona</string> <string>AZ</string> </array>
+				<array> <string>Arkansas</string> <string>AR</string> </array>
+				<array> <string>British Columbia</string> <string>BC</string> </array>
+				<array> <string>California</string> <string>CA</string> </array>
+				<array> <string>Colorado</string> <string>CO</string> </array>
+				<array> <string>Connecticut</string> <string>CT</string> </array>
+				<array> <string>Delaware</string> <string>DE</string> </array>
+				<array> <string>District of Columbia</string> <string>DC</string> </array>
+				<array> <string>Florida</string> <string>FL</string> </array>
+				<array> <string>Georgia</string> <string>GA</string> </array>
+				<array> <string>Hawaii</string> <string>HI</string> </array>
+				<array> <string>Idaho</string> <string>ID</string> </array>
+				<array> <string>Illinois</string> <string>IL</string> </array>
+				<array> <string>Indiana</string> <string>IN</string> </array>
+				<array> <string>Iowa</string> <string>IA</string> </array>
+				<array> <string>Kansas</string> <string>KS</string> </array>
+				<array> <string>Kentucky</string> <string>KY</string> </array>
+				<array> <string>Louisiana</string> <string>LA</string> </array>
+				<array> <string>Maine</string> <string>ME</string> </array>
+				<array> <string>Manitoba</string> <string>MB</string> </array>
+				<array> <string>Maryland</string> <string>MD</string> </array>
+				<array> <string>Massachusetts</string> <string>MA</string> </array>
+				<array> <string>Michigan</string> <string>MI</string> </array>
+				<array> <string>Minnesota</string> <string>MN</string> </array>
+				<array> <string>Mississippi</string> <string>MS</string> </array>
+				<array> <string>Missouri</string> <string>MO</string> </array>
+				<array> <string>Montana</string> <string>MT</string> </array>
+				<array> <string>Nebraska</string> <string>NE</string> </array>
+				<array> <string>Nevada</string> <string>NV</string> </array>
+				<array> <string>New Brunswick</string> <string>NB</string> </array>
+				<array> <string>New Hampshire</string> <string>NH</string> </array>
+				<array> <string>New Jersey</string> <string>NJ</string> </array>
+				<array> <string>New Mexico</string> <string>NM</string> </array>
+				<array> <string>New York</string> <string>NY</string> </array>
+				<array> <string>Newfoundland</string> <string>NF</string> </array>
+				<array> <string>Nord-Carolina</string> <string>NC</string> </array>
+				<array> <string>Nord-Dakota</string> <string>ND</string> </array>
+				<array> <string>Northwest Territories</string> <string>NT</string> </array>
+				<array> <string>Nova Scotia</string> <string>NS</string> </array>
+				<array> <string>Ohio</string> <string>OH</string> </array>
+				<array> <string>Oklahoma</string> <string>OK</string> </array>
+				<array> <string>Ontario</string> <string>ON</string> </array>
+				<array> <string>Oregon</string> <string>OR</string> </array>
+				<array> <string>Pennsylvania</string> <string>PA</string> </array>
+				<array> <string>Prince Edward Island</string> <string>PE</string> </array>
+				<array> <string>Quebec</string> <string>PQ</string> </array>
+				<array> <string>Rhode Island</string> <string>RI</string> </array>
+				<array> <string>Saskatchewan</string> <string>SK</string> </array>
+				<array> <string>Sør-Carolina</string> <string>SC</string> </array>
+				<array> <string>Sør-Dakota</string> <string>SD</string> </array>
+				<array> <string>Tennessee</string> <string>TN</string> </array>
+				<array> <string>Texas</string> <string>TX</string> </array>
+				<array> <string>Utah</string> <string>UT</string> </array>
+				<array> <string>Vermont</string> <string>VT</string> </array>
+				<array> <string>Virginia</string> <string>VA</string> </array>
+				<array> <string>Washington</string> <string>WA</string> </array>
+				<array> <string>West Virginia</string> <string>WV</string> </array>
+				<array> <string>Wisconsin</string> <string>WI</string> </array>
+				<array> <string>Wyoming</string> <string>WY</string> </array>
+				<array> <string>Yukon</string> <string>YT</string> </array>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style>
+    html {
+        background-color: transparent;
+        zoom: reset;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-size: 0;
+    }
+
+    #search {
+        -webkit-appearance: none;
+        width: 193px;
+        border-width: 0px 12px 0px 17px;
+        -webkit-border-image: url(BlackSearchFieldCell.png) 0 12 0 17;
+        -webkit-box-sizing: border-box;
+        outline: none;
+        color: white;
+        height: 20px;
+        /* Keep this font in sync with BlackButtonLayer */
+        font: small-caption;
+        font-size: 11px;
+        padding: 2px 0 0 3px;
+        margin: 0;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #alternateCancelButton {
+        background: transparent url(BlackSearchFieldCancel.png) no-repeat;
+        width: 12px;
+        height: 13px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 3px;
+        right: 7px;
+        display: none;
+    }
+
+    #alternateCancelButton:active {
+        background-image: url(BlackSearchFieldCancelPressed.png);
+    }
+
+    input[type="search"]::-webkit-search-cancel-button {
+        display: none;
+    }
+
+    input[type="search"]::-webkit-search-decoration {
+        display: none;
+    }
+    
+    input[type="search"]::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    </style>
+    <script type="text/javascript" src="Utilities.js"></script>
+    <script type="text/javascript" src="HTMLViewController.js"></script>
+    <script type="text/javascript">
+        var SearchField = {
+            pageLoaded: function()
+            {
+                HTMLViewController.pageLoaded();
+                SearchFieldController.loaded();
+
+                var searchField = document.getElementById("search");
+                searchField.addEventListener("search", function() { SearchFieldController.onSearch(searchField.value); }, false);
+                searchField.addEventListener("focus", function() { showCancelButton(); SearchFieldController.onFocus(); }, false);
+                searchField.addEventListener("blur", searchFieldBlurred, false);
+                searchField.addEventListener("keydown", handleSpecialKeys, false);
+                searchField.setAttribute("placeholder", SearchFieldController.placeholderText());
+               
+                var cancelButton = document.getElementById("alternateCancelButton");
+                cancelButton.addEventListener("mousedown", function() { return selectAll(); }, false);
+                cancelButton.addEventListener("mouseup", function() { clearField(); }, false);
+                
+                window.addEventListener("focus", function() { searchField.focus(); }, false);
+                window.addEventListener("blur", function() { searchField.blur(); }, false);
+            },
+        };
+
+        HTMLViewController.loadLocalizedStrings(SearchFieldController);
+        window.addEventListener("load", function() { SearchField.pageLoaded(); }, false);
+        
+        function showCancelButton()
+        {
+            var cancelButton = document.getElementById("alternateCancelButton");
+            cancelButton.style.display = "inline-block";
+        }
+
+        function hideCancelButton()
+        {
+            var cancelButton = document.getElementById("alternateCancelButton");
+            cancelButton.style.display = "none";
+        }
+       
+        function selectAll()
+        {
+            var field = document.getElementById("search");
+            if (field.value.length > 0) {
+                field.focus();
+                field.select();
+            }
+            return false;
+        }
+        
+        function clearField()
+        {
+            var field = document.getElementById("search");
+            field.value = "";
+            field.blur();
+            hideCancelButton();
+            SearchFieldController.onBlur();
+        }
+
+        function searchFieldBlurred()
+        {
+            var field = document.getElementById("search");
+            if (!field.value.length)
+                hideCancelButton();
+            SearchFieldController.onBlur();
+        }
+
+        function handleSpecialKeys(event)
+        {
+            // only tab makes the search field relinquish focus
+            if (event.keyCode == 9) {
+                SearchFieldController.onTabPressed(event.shiftKey);
+                // Resign focus.  The onBlur handler will take care of sending the focus to the right place.
+                document.getElementById("search").blur();
+                // Prevent default tab focus action which will focus this search field again.
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id=search type=search incremental><input type="button" id="alternateCancelButton" tabIndex="-1">
+</body>
+</html>

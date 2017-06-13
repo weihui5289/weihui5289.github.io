@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title class="l12n">Bookmark Chooser</title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<script type="text/javascript" src="BookmarkChooser/TreeView.js"></script>
+<script type="text/javascript" src="BookmarkChooser/BookmarkChooser.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+<link rel="stylesheet" href="BookmarkChooser/TreeView.css">
+<style type="text/css">
+html {
+  width: 486px;
+  height: 350px;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  font-size: 13px;
+  margin: 20px 18px 8px 18px;
+}
+
+.browserContainer {
+  border: solid #404040;
+  border-width: 1px 0;
+  height: 243px;
+  margin: 8px 0 20px 0;
+  position: relative;
+}
+
+#collectionView {
+  overflow-x: hidden;
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #404040;
+}
+
+#outlineView {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+</style>
+
+<script type="text/javascript">
+HTMLViewController.loadLocalizedStrings(BookmarkChooserController);
+</script>
+
+</head>
+
+<body onload="BookmarkChooser.pageLoaded()" onkeydown="BookmarkChooser.keyDown(event)">
+
+<p class="header l12n">Choose a folder or collection</p>
+
+<div class="browserContainer">
+
+  <div id="collectionView" class="treeView">
+    <ul>
+    </ul>
+  </div>
+
+  <div id="outlineView" class="treeView expandable">
+    <ul>
+    </ul>
+  </div>
+
+</div>
+
+<p class="action-group">
+  <button class="action l12n" onclick="BookmarkChooser.chooseSelected()" type="submit">Choose</button>
+  <button class="action l12n" onclick="BookmarkChooser.cancelSelected()">Cancel</button>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base>
+    <title>Reader</title>
+    <style id="article-content">
+        @media print {
+            .original-url {
+                display: none;
+            }
+        }
+
+        h1.title {
+            font-family: Palatino, Georgia, Times, "Times New Roman", serif;
+            font-weight: bold;
+            font-size: 1.33em;
+            line-height: 1.25em;
+            text-align: start;
+            -webkit-hyphens: manual;
+        }
+        
+        h1 {
+            font-size: 1.25em;
+        }
+        
+        h2 {
+            font-size: 1.125em;
+        }
+        
+        h3 {
+            font-size: 1.05em;
+        }
+
+        .page.rtl {
+            direction: rtl;
+        }
+
+        .page a {
+            text-decoration: none;
+            color: rgb(32, 0, 127);
+        }
+        
+        .page a:visited {
+            color: rgb(32, 0, 127);
+        }
+        
+        #article pre {
+            white-space: pre-wrap;
+        }
+
+        #article img {
+            /* Float images to the left, so that text will nicely flow around them. */
+            float: left;
+            margin-right: 12px;
+            
+            /* Scale down very wide images, but maintain their intrinsic aspect ratio. */
+            max-width: 100%;
+            height: auto;
+        }
+        
+        #article img.reader-image-tiny {
+            /* Don't float very small images -- let them display where they occur in the text. */
+            float: none;
+            margin: 0;
+        }
+        
+        #article img.reader-image-large {
+            float: none;
+            margin: auto;
+            display: block;
+        }
+
+        .float {
+            margin: 8px 0;
+            font-size: 65%;
+            line-height: 1.4;
+            text-align: start;
+            -webkit-hyphens: manual;
+        }
+
+        .float.left {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .float.right {
+            float: right;
+            margin-left: 20px;
+        }
+        
+        .float.full-width {
+            float: none;
+            display: block;
+        }
+        
+        .page {
+            font: 20px Palatino, Georgia, Times, "Times New Roman", serif;
+            line-height: 160%;
+            text-align: justify;
+        }
+    
+        .page:first-of-type .title {
+            display: block;
+        }
+        
+        .page table {
+            font-size: 0.9em;
+            text-align: start;
+            -webkit-hyphens: manual;
+        }
+
+        .page-number {
+            display: none;
+        }
+    
+        .title {
+            display: none;
+        }    
+    </style>
+    <style id="reader-ui">
+    @media screen {
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            -webkit-user-select: none;
+        }
+
+        .cached embed, .cached applet, .cached object {
+            display: none !important;
+        }
+
+        #background {
+            background-color: rgba(0, 0, 0, 0.8);
+            -webkit-transform: translateZ(0);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        #container {
+            margin-left: -431px;
+            left: 50%;
+            width: 862px;
+            height: 100%;
+            position: absolute;
+            pointer-events: none;
+        }
+        
+        #centered {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        body.preloading {
+            overflow: hidden;
+        }
+
+        .preloading #background {
+            opacity: 0;
+        }
+
+        .preloading #centered {
+            -webkit-transform: translate3d(0, 100%, 0);
+        }
+
+        body.activating {
+            overflow: hidden;
+        }
+
+        .activating #background {
+            -webkit-transition: opacity 0.40s ease-out;
+            opacity: 1.0;
+        }
+
+        .activating #fade-top {
+            -webkit-animation-name: fadeTopActivationFadeIn;
+            -webkit-animation-duration: 0.40s;
+            -webkit-animation-timing-function: ease-out;
+        }
+        
+        .activating.skip-transition #fade-top {
+            -webkit-animation: none !important;
+        }
+        
+        @-webkit-keyframes fadeTopActivationFadeIn {
+            0% {
+                opacity: 0;
+            }
+            80% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;            
+            }
+        }
+                        
+        .activating.skip-transition #background {
+            -webkit-transition: none !important;
+        }
+        
+        .activating #centered {
+            -webkit-transition: -webkit-transform 0.40s ease-out;
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+
+        .activating.skip-transition #centered {
+            -webkit-transition: none !important;
+        }
+        
+        body.deactivating {
+            overflow: hidden;
+        }
+
+        .deactivating #background {
+            -webkit-transition: opacity 0.40s ease-in;
+            opacity: 0;
+        }
+
+        .deactivating #fade-top {
+            opacity: 0;
+        }
+
+        .deactivating #fade-bottom {
+            -webkit-transition: opacity 0.40s ease-in;
+            opacity: 0;
+        }
+
+        .deactivating #centered {
+            -webkit-transition: -webkit-transform 0.40s ease-in;
+            -webkit-transform: translate3d(0, 100%, 0);
+        }
+
+        .deactivating #hud {
+            -webkit-transition: opacity 0.25s ease-in;
+            opacity: 0 !important;
+        }
+        
+        #drop-shadow {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 800px;
+            left: 10px;
+            border-width: 24px 24px;
+            -webkit-border-image: url(safari-resource:/ReaderDropShadow.png) 47.1% 47.1% 47.1% 47.1% stretch stretch;
+            opacity: 0;
+        }
+                
+        ::-webkit-scrollbar {
+            width: 21px;
+        }
+        
+        ::-webkit-scrollbar:horizontal {
+            display: none;
+        }
+                
+        ::-webkit-scrollbar-track {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            -webkit-border-image: url(safari-resource:/ReaderTrack.png) 19% 0 19% 0;
+            border-width: 21px 0;
+        }
+
+        ::-webkit-scrollbar-track:disabled {
+            display: none;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-image: url(safari-resource:/ReaderThumb.png) 18.3% 0 18.3% 0;
+            border-width: 19px 0;
+            min-height: 40px;
+        }
+        
+        #hud {
+            position: fixed;
+            width: 314px;
+            height: 72px;
+            left: 50%;
+            margin-left: -157px;
+            bottom: 30px;
+            background: rgba(0, 0, 0, 0.75);
+            -webkit-border-radius: 12px;
+            z-index: 100;
+            opacity: 0;
+            -webkit-transition: opacity 0.75s;
+            pointer-events: auto;
+            zoom: reset;
+        }
+
+        #hud button {
+            display: block;
+            float: left;
+            width: 48px;
+            height: 48px;
+            padding: 0;
+            border: none;
+            margin: 12px 5px;
+            background-size: 48px 48px;
+        }
+
+        #hud button:first-of-type {
+            margin-left: 12px;
+        }
+
+        #hud button:last-of-type {
+            margin-right: 12px;            
+        }
+
+        #hud-zoom-out {
+            background: url(safari-resource:/ReaderHUDZoomOutInactive.png) no-repeat;
+        }
+
+        #hud-zoom-out:active {
+            background: url(safari-resource:/ReaderHUDZoomOutActive.png) no-repeat;
+        }
+
+        #hud-zoom-in {
+            background: url(safari-resource:/ReaderHUDZoomInInactive.png) no-repeat;
+        }
+
+        #hud-zoom-in:active {
+            background: url(safari-resource:/ReaderHUDZoomInActive.png) no-repeat;
+        }
+
+        #hud-mail {
+            background: url(safari-resource:/ReaderHUDMailContentsInactive.png) no-repeat;
+        }
+
+        #hud-mail:active {
+            background: url(safari-resource:/ReaderHUDMailContentsActive.png) no-repeat;
+        }
+
+        #hud-print {
+            background: url(safari-resource:/ReaderHUDPrintInactive.png) no-repeat;
+        }
+
+        #hud-print:active {
+            background: url(safari-resource:/ReaderHUDPrintActive.png) no-repeat;
+        }
+
+        #hud-exit {
+            background: url(safari-resource:/ReaderHUDCloseInactive.png) no-repeat;
+        }
+
+        #hud-exit:active {
+            background: url(safari-resource:/ReaderHUDCloseActive.png) no-repeat;
+        }
+
+        #article {
+            /* The width of 819px here includes 19px for the WebKit scrollbar's width. */
+            /* The padding-right of 8px separates the scrollbar from the article itself. */
+            position: absolute;
+            height: 100%;
+            left: 34px;
+            width: 819px;
+            padding-right: 8px;
+            overflow: scroll;
+            z-index: 0;
+            outline: none;
+            pointer-events: auto;
+            -webkit-user-select: auto;
+            -webkit-transform: translateZ(0);
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+
+        .article-fade {
+            position: absolute;
+            left: 34px;
+            height: 36px;
+            width: 800px;
+            z-index: 10; 
+            pointer-events: none;           
+            background-size: 800px 36px;
+        }
+
+        #fade-top {
+            top: 0;
+            background: url(safari-resource:/ReaderFadeTop.png) repeat-x;
+        }
+
+        #fade-bottom {
+            bottom: 0;
+            background: url(safari-resource:/ReaderFadeBottom.png) repeat-x;
+        }
+        
+        #resize-indicator {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            background: url(safari-resource:/TopSitesCornerResize~snowleopard.png);
+        }
+        
+        .page:only-of-type .page-number {
+            display: none;
+        }
+        
+        .page-number {
+            display: block;
+            font: bold 11px Helvetica, sans-serif;
+            margin-left: 12px;
+            color: #B2B2B2;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            -webkit-user-select: none;
+        }
+
+        .page:first-of-type {
+            margin-top: 22px;
+        }
+
+        .page:last-of-type {
+            margin-bottom: 22px;
+        }
+
+        .page {
+            width: 658px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            padding: 45px 70px;
+            color: black;
+            background: white;
+            border: 1px solid #c3c3c3;
+            position: relative;
+            overflow: hidden;
+            -webkit-transition: height .5s ease-out;
+        }
+
+        #incoming-page-placeholder {
+            height: 30px;
+            margin-bottom: 0;
+        }
+        
+        #incoming-page-corner {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+        
+        #incoming-page-spinner {
+            width: 16px;
+            height: 16px;
+            float: right;
+            background-image: url(safari-resource:/ReaderSpinner.png);
+            background-size: 16px 16px;
+        }
+
+        #incoming-page-text {
+            float: right;
+            margin-top: 2px;
+            margin-left: 8px;
+            color: #B2B2B2;
+            font: bold 11px Helvetica, sans-serif;
+            -webkit-user-select: none;
+        }
+                        
+        #next-page-container {
+            position:absolute;
+            display: none;
+        }
+        
+        .no-transition {
+            -webkit-transition: none !important;
+        }
+
+        /* These keyframes try to reproduce the 12 discrete steps seen in a standard system progress indicator. */
+        @-webkit-keyframes discreteSpinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            8.332% {
+                -webkit-transform: rotate(0deg);
+            }
+            8.333% {
+                -webkit-transform: rotate(30deg);
+            }
+            16.665% {
+                -webkit-transform: rotate(30deg);
+            }
+            16.666% {
+                -webkit-transform: rotate(60deg);
+            }
+            24.999% {
+                -webkit-transform: rotate(60deg);
+            }
+            25.000% {
+                -webkit-transform: rotate(90deg);
+            }
+            33.332% {
+                -webkit-transform: rotate(90deg);
+            }
+            33.333% {
+                -webkit-transform: rotate(120deg);
+            }
+            41.665% {
+                -webkit-transform: rotate(120deg);
+            }
+            41.666% {
+                -webkit-transform: rotate(150deg);
+            }
+            49.999% {
+                -webkit-transform: rotate(150deg);
+            }
+            50.000% {
+                -webkit-transform: rotate(180deg);
+            }
+            58.332% {
+                -webkit-transform: rotate(180deg);
+            }
+            58.333% {
+                -webkit-transform: rotate(210deg);
+            }
+            66.665% {
+                -webkit-transform: rotate(210deg);
+            }
+            66.666% {
+                -webkit-transform: rotate(240deg);
+            }
+            74.999% {
+                -webkit-transform: rotate(240deg);
+            }
+            75.000% {
+                -webkit-transform: rotate(270deg);
+            }
+            83.332% {
+                -webkit-transform: rotate(270deg);
+            }
+            83.333% {
+                -webkit-transform: rotate(300deg);
+            }
+            91.665% {
+                -webkit-transform: rotate(300deg);
+            }
+            91.666% {
+                -webkit-transform: rotate(330deg);
+            }
+            100% {
+                -webkit-transform: rotate(330deg);
+            }
+        }
+        
+        .animation-discrete-spinner {
+            -webkit-animation-name: discreteSpinner;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio:2) {
+        #drop-shadow {
+            -webkit-border-image: url(safari-resource:/ReaderDropShadow@2x.png) 47.1% 47.1% 47.1% 47.1% stretch stretch;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-border-image: url(safari-resource:/ReaderTrack@2x.png) 19% 0 19% 0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-image: url(safari-resource:/ReaderThumb@2x.png) 18.3% 0 18.3% 0;
+        }
+
+        #hud-zoom-out {
+            background-image: url(safari-resource:/ReaderHUDZoomOutInactive@2x.png);
+        }
+
+        #hud-zoom-out:active {
+            background-image: url(safari-resource:/ReaderHUDZoomOutActive@2x.png);
+        }
+
+        #hud-zoom-in {
+            background-image: url(safari-resource:/ReaderHUDZoomInInactive@2x.png);
+        }
+
+        #hud-zoom-in:active {
+            background-image: url(safari-resource:/ReaderHUDZoomInActive@2x.png);
+        }
+
+        #hud-mail {
+            background-image: url(safari-resource:/ReaderHUDMailContentsInactive@2x.png);
+        }
+
+        #hud-mail:active {
+            background-image: url(safari-resource:/ReaderHUDMailContentsActive@2x.png);
+        }
+
+        #hud-print {
+            background-image: url(safari-resource:/ReaderHUDPrintInactive@2x.png);
+        }
+
+        #hud-print:active {
+            background-image: url(safari-resource:/ReaderHUDPrintActive@2x.png);
+        }
+
+        #hud-exit {
+            background-image: url(safari-resource:/ReaderHUDCloseInactive@2x.png);
+        }
+
+        #hud-exit:active {
+            background-image: url(safari-resource:/ReaderHUDCloseActive@2x.png);
+        }
+
+        #fade-top {
+            background-image: url(safari-resource:/ReaderFadeTop@2x.png);
+        }
+
+        #fade-bottom {
+            background-image: url(safari-resource:/ReaderFadeBottom@2x.png);
+        }
+
+        #incoming-page-spinner {
+            background-image: url(safari-resource:/ReaderSpinner@2x.png);
+        }
+    }
+    </style>
+    <script src="safari-resource:/localizedStrings.js"></script>
+</head>
+<body class="preloading" onload="ReaderJS.loaded();" onselectstart="setHUDAcceptsPointerEvents(false);" onmouseup="setHUDAcceptsPointerEvents(true);" onblur="didLoseFocus();">
+    <div aria-hidden="true" id="background" onclick="deactivateAfterAnimation();"></div>
+    <iframe aria-hidden="true" id="next-page-container"></iframe>
+    <div id="container">
+        <div aria-hidden="true" id="resize-indicator"></div>
+        <div id="centered">
+            <div aria-hidden="true" id="drop-shadow"></div>
+            <div id="article" onscroll="articleScrolled();" tabindex="0">
+                <!-- This node will contain a number of 'page' class divs. -->
+            </div>
+        </div>
+        <!-- Keep the toolbar items on the bottom, so VoiceOver doesn't navigate to this item first. -->
+        <div id="hud" role="toolbar" onmouseover="hudMouseOver(event);" onmouseout="hudMouseOut(event);">
+            <button id="hud-zoom-out" onclick="makeTextSmaller();"></button>
+            <button id="hud-zoom-in" onclick="makeTextLarger();"></button>
+            <button id="hud-mail" onclick="mailArticle();"></button>
+            <button id="hud-print" onclick="printArticle();"></button>
+            <button id="hud-exit" onclick="deactivateAfterAnimation();"></button>
+        </div>
+        <div aria-hidden="true" id="fade-top" class="article-fade"></div>
+        <div aria-hidden="true" id="fade-bottom" class="article-fade"></div>
+    </div>
+</body>
+</html>

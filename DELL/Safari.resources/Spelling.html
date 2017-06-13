@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title class="l12n">Spelling and Grammar</title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+
+<style type="text/css">
+
+body
+{
+    margin: .5em 1em .5em 1em;
+}
+
+table
+{
+    padding-right: 1em;
+}
+
+#suggestions-list
+{
+    font-size: inherit;
+}
+
+.small-label
+{
+    font-size: 11px;
+}
+
+.left-controls
+{
+    min-width: 280px;
+    padding-right: 10px;
+}
+
+.top-controls
+{
+    vertical-align: top;
+}
+
+.bottom-controls
+{
+    vertical-align: bottom;
+}
+
+
+.controls > *
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+#description
+{
+    font-size: inherit;
+    white-space: normal;
+    height: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#error-word-edit
+{
+    margin-bottom: 5px;
+}
+
+</style>
+
+<script type="text/javascript">
+var Spelling = {
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        SpellingController.loaded();
+    },
+    
+    ignore: function()
+    {
+        SpellingController.ignore();
+    },
+    
+    learn: function()
+    {
+        SpellingController.learn();
+    },
+    
+    next: function()
+    {
+        SpellingController.next();
+    },
+    
+    change: function()
+    {
+        SpellingController.change();
+    },
+    
+    checkGrammarChanged: function()
+    {
+        SpellingController.checkGrammarChanged();
+    },
+    
+    suggestionsChanged: function()
+    {
+        SpellingController.suggestionsChanged();
+    },
+    
+    languageChanged: function()
+    {
+        SpellingController.languageChanged();
+    },
+    
+    suggestionDblClicked: function()
+    {
+        SpellingController.suggestionDblClicked();
+    }
+}
+
+HTMLViewController.loadLocalizedStrings(SpellingController);
+
+</script>
+
+</head>
+
+<body onload="Spelling.pageLoaded()">
+<table>
+<tr>
+<td rowspan="2" class="controls left-controls">
+    <input type="text" id="error-word-edit">
+    <p id="description"></p>
+    <select id="suggestions-list" size="7" onchange="Spelling.suggestionsChanged()" ondblclick="Spelling.suggestionDblClicked()"></select>
+    <select id="language-menu" onchange="Spelling.languageChanged()"></select>
+</td>
+<td class="controls top-controls">
+    <button class="l12n" onclick="Spelling.ignore()">Ignore</button>
+    <button class="l12n" onclick="Spelling.learn()">Learn</button>
+    <button class="l12n" onclick="Spelling.next()">Find Next</button>
+</td>
+</tr>
+<tr>
+<td class="controls bottom-controls">
+      <button class="l12n" onclick="Spelling.change()">Change</button>
+      <span><input type="checkbox" id="check-grammar-box" onchange="Spelling.checkGrammarChanged()"><label class="l12n small-label" for="check-grammar-box">Check grammar</label></span>
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

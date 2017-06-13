@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mappings</key>
+	<array>
+		<dict>
+			<key>ABProperty</key>
+			<string>First</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>名（全角8文字以内）</string>
+				<string>名</string>
+				<string>名前</string>
+				<string>名：</string>
+				<string>first</string>
+				<string>first name</string>
+				<string>fname</string>
+				<string>f name</string>
+				<string>firstname</string>
+				<string>given name</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Middle</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>ミドルネーム</string>
+				<string>middle initial</string>
+				<string>middleinitial</string>
+				<string>middle name</string>
+				<string>middlename</string>
+				<string>middle</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Last</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>姓（全角8文字以内）</string>
+				<string>姓</string>
+				<string>氏</string>
+				<string>名字</string>
+				<string>姓：</string>				<string>last</string>
+				<string>last name</string>
+				<string>lname</string>
+				<string>l name</string>
+				<string>lastname</string>
+				<string>surname</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABComputedProperty</key>
+			<string>_realCompositeName</string>
+			<key>ABProperty</key>
+			<array>
+				<string>First</string>
+				<string>Middle</string>
+				<string>Last</string>
+				<string>Suffix</string>
+			</array>
+			<key>FieldLabels</key>
+			<array>
+				<string>お名前</string>
+				<string>名前</string>
+				<string>氏名</string>
+				<string>フルネーム</string>
+				<string>fullname</string>
+				<string>full name</string>
+			</array>
+			<key>ProxyABProperty</key>
+			<string>FullNameComposite</string>
+		</dict>
+		<dict>
+			<key>ABComputedProperty</key>
+			<string>_realCompositeName</string>
+			<key>ABProperty</key>
+			<array>
+				<string>First</string>
+				<string>Middle</string>
+				<string>Last</string>
+				<string>Suffix</string>
+			</array>
+			<key>FieldLabels</key>
+			<array>
+				<string>お名前</string>
+				<string>名前</string>
+				<string>氏名</string>
+				<string>名</string>
+				<string>name</string>
+			</array>
+			<key>ProxyABProperty</key>
+			<string>FullNameComposite</string>
+			<key>SearchPass</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Birthday</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>誕生日</string>
+				<string>生年月日</string>
+				<string>お誕生日</string>
+				<string>birthday</string>
+				<string>date of birth</string>
+				<string>born</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>JobTitle</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>役職</string>
+				<string>職種</string>
+				<string>職業</string>
+				<string>job title</string>
+				<string>jobtitle</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Email</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>Email address</string>
+				<string>メール</string>
+				<string>メールアドレス</string>
+				<string>Emailアドレス</string>
+				<string>Email アドレス</string>
+				<string>電子メール</string>
+				<string>Eメールアドレス</string>					<string>アドレス</string>
+				<string>メアド</string>
+				<string>メルアド</string>
+				<string>email</string>
+				<string>emailAddr</string>
+				<string>emailAddress</string>
+				<string>e-mail</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABKey</key>
+			<string>Street</string>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>番地</string>
+				<string>住所</string>
+				<string>それ以降の住所</string>
+				<string>住所（17文字以内）</string>
+				<string>住所入力欄</string>
+				<string>番地：</string>
+				<string>street</string>
+				<string>street address</string>
+				<string>streetaddress</string>
+				<string>addrstreet</string>
+				<string>enterAddressAddressLine</string>
+				<string>address1</string>
+				<string>address 1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABKey</key>
+			<string>Street</string>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>住所</string>
+				<string>ご住所</string>
+				<string>アドレス</string>
+				<string>address</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>4</integer>
+		</dict>
+		<dict>
+			<key>ABKey</key>
+			<string>City</string>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>市区町村</string>
+				<string>市区郡町村</string>
+				<string>市区町村（11文字以内）</string>
+				<string>市区町村：</string>
+				<string>州または郡／市区町村</string>
+				<string>郡市区（島・国名）</string>
+				<string>市区町村（11文字以内）</string>
+				<string>州または郡/市区町村</string>
+				<string>郡市区(島・国名)</string>
+				<string>city</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABKey</key>
+			<string>State</string>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>都道府県</string>
+				<string>都道府県：</string>
+				<string>州</string>
+				<string>state</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABKey</key>
+			<string>ZIP</string>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>郵便番号</string>
+				<string>郵便番号：</string>
+				<string>〒</string>
+				<string>zip</string>
+				<string>zipcode</string>
+				<string>zip code</string>
+				<string>postalcode</string>
+				<string>postal code</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABKey</key>
+			<string>Country</string>
+			<key>ABProperty</key>
+			<string>Address</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>国</string>
+				<string>国、地域</string>
+				<string>国/地域名</string>
+				<string>国/地域名：</string>
+				<string>国／地域名</string>
+				<string>国／地域名：</string>
+				<string>country</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABLabel</key>
+			<string>_$!&lt;Home&gt;!$_</string>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>自宅</string>
+				<string>自宅電話番号</string>
+				<string>夜間電話番号</string>
+				<string>個人電話番号</string>
+				<string>電話番号(自宅)</string>
+				<string>電話番号(夜間)</string>
+				<string>電話番号(個人)</string>
+				<string>電話番号（自宅）</string>
+				<string>電話番号（夜間）</string>
+				<string>電話番号（個人）</string>
+				<string>電話(自宅)</string>
+				<string>電話(夜間)</string>
+				<string>電話(個人)</string>
+				<string>電話（自宅）</string>
+				<string>電話（夜間）</string>
+				<string>電話（個人）</string>
+				<string>電話番号</string>
+				<string>自宅電話</string>
+				<string>自宅電話：</string>				<string>homephone</string>
+				<string>home phone</string>
+				<string>eveningphone</string>
+				<string>evening phone</string>
+				<string>home area code</string>
+				<string>home areacode</string>
+				<string>homeareacode</string>
+				<string>evening area code</string>
+				<string>evening areacode</string>
+				<string>eveningareacode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABLabel</key>
+			<string>_$!&lt;Work&gt;!$_</string>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>勤務先</string>
+				<string>勤務先電話番号</string>
+				<string>会社電話番号</string>
+				<string>職場電話番号</string>
+				<string>日中電話番号</string>
+				<string>昼間電話番号</string>
+				<string>電話番号（会社）</string>
+				<string>電話番号（勤務先）</string>
+				<string>電話番号（職場）</string>
+				<string>電話番号（日中）</string>
+				<string>電話番号（昼間）</string>
+				<string>電話番号(会社)</string>
+				<string>電話番号(勤務先)</string>
+				<string>電話番号(職場)</string>
+				<string>電話番号(日中)</string>
+				<string>電話番号(昼間)</string>
+				<string>電話（会社）</string>
+				<string>電話（勤務先）</string>
+				<string>電話（職場）</string>
+				<string>電話（日中）</string>
+				<string>電話（昼間）</string>
+				<string>電話(会社)</string>
+				<string>電話(勤務先)</string>
+				<string>電話(職場)</string>
+				<string>電話(日中)</string>
+				<string>電話(昼間)</string>
+				<string>電話番号</string>
+				<string>会社電話</string>
+				<string>会社電話：</string>
+				<string>workphone</string>
+				<string>work phone</string>
+				<string>dayphone</string>
+				<string>day phone</string>
+				<string>daytime phone</string>
+				<string>daytime telephone</string>
+				<string>companyphone</string>
+				<string>company phone</string>
+				<string>businessphone</string>
+				<string>business phone</string>
+				<string>work area code</string>
+				<string>work areacode</string>
+				<string>workareacode</string>
+				<string>day area code</string>
+				<string>day areacode</string>
+				<string>dayareacode</string>
+				<string>company area code</string>
+				<string>company areacode</string>
+				<string>companyareacode</string>
+				<string>business area code</string>
+				<string>business areacode</string>
+				<string>businessareacode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABLabel</key>
+			<string>_$!&lt;Mobile&gt;!$_</string>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>携帯</string>
+				<string>携帯電話</string>
+				<string>携帯電話番号</string>
+				<string>電話番号（携帯）</string>
+				<string>電話番号(携帯)</string>
+				<string>携帯番号</string>
+				<string>ケータイ</string>
+				<string>ケータイ電話</string>
+				<string>ケータイ電話番号</string>
+				<string>ケータイ番号</string>
+				<string>mobilephone</string>
+				<string>mobile phone</string>
+				<string>cellphone</string>
+				<string>cell phone</string>
+				<string>mobile area code</string>
+				<string>mobile areacode</string>
+				<string>mobileareacode</string>
+				<string>cell area code</string>
+				<string>cell areacode</string>
+				<string>cellareacode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABLabel</key>
+			<string>_$!&lt;Pager&gt;!$_</string>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>ポケットベル</string>
+				<string>ポケットベル番号</string>
+				<string>ポケットベル電話番号</string>
+				<string>電話番号（ポケットベル）</string>
+				<string>電話番号（ポケベル）</string>
+				<string>電話番号(ポケットベル)</string>
+				<string>電話番号(ポケベル)</string>
+				<string>電話（ポケットベル）</string>
+				<string>電話（ポケベル）</string>
+				<string>電話(ポケットベル)</string>
+				<string>電話(ポケベル)</string>
+				<string>ポケベル</string>
+				<string>ポケベル番号</string>
+				<string>ポケベル電話番号</string>					<string>pagerphone</string>
+				<string>pager phone</string>
+				<string>pager area code</string>
+				<string>pager areacode</string>
+				<string>pagerareacode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>市外局番</string>
+				<string>エリアコード</string>				<string>area code</string>
+				<string>areacode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>電話</string>
+				<string>電話番号</string>
+				<string>電話番号※</string>
+				<string>固定電話</string>
+				<string>固定電話番号</string>
+				<string>電話番号（固定）</string>
+				<string>電話番号(固定)</string>
+				<string>tel</string>					<string>phone</string>
+				<string>phonenumber</string>
+				<string>phone number</string>
+				<string>telephone</string>
+			</array>
+			<key>SearchPass</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Phone</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>ファクス</string>
+				<string>ファックス</string>
+				<string>ファクシミリ</string>
+				<string>ファクス番号</string>
+				<string>ファックス番号</string>
+				<string>ファクシミリ番号</string>
+				<string>FAX番号</string>
+				<string>電話番号（ファクス）</string>
+				<string>電話番号（ファックス）</string>
+				<string>電話番号（ファクシミリ）</string>
+				<string>電話番号（FAX）</string>
+				<string>電話番号(ファクス)</string>
+				<string>電話番号(ファックス)</string>
+				<string>電話番号(ファクシミリ)</string>
+				<string>電話番号(FAX)</string>
+				<string>fax</string>
+			</array>
+		</dict>
+		<dict>
+			<key>ABProperty</key>
+			<string>Organization</string>
+			<key>FieldLabels</key>
+			<array>
+				<string>所属</string>
+				<string>会社</string>
+				<string>組織</string>
+				<string>職場</string>
+				<string>会社名</string>
+				<string>組織名</string>
+				<string>勤務先</string>
+				<string>勤務先会社</string>
+				<string>勤務先会社名</string>
+				<string>所属組織</string>
+				<string>所属組織名</string>
+				<string>organization</string>
+				<string>company</string>
+			</array>
+		</dict>
+	</array>
+	<key>Synonyms</key>
+	<dict>
+		<key>Address</key>
+		<dict>
+			<key>Country</key>
+			<array>
+				<array>
+					<string>アメリカ</string>
+					<string>アメリカ合衆国</string>
+					<string>米国</string>
+					<string>USA</string>
+					<string>US</string>
+					<string>United States</string>
+					<string>United States of America</string>
+				</array>
+				<array>
+					<string>イギリス</string>
+					<string>英国</string>
+					<string>UK</string>
+					<string>United Kingdom</string>
+				</array>
+			</array>
+			<key>State</key>
+			<array>
+				<array>
+					<string>Alabama</string>
+					<string>AL</string>
+				</array>
+				<array>
+					<string>Alaska</string>
+					<string>AK</string>
+				</array>
+				<array>
+					<string>Alberta</string>
+					<string>AB</string>
+				</array>
+				<array>
+					<string>Arizona</string>
+					<string>AZ</string>
+				</array>
+				<array>
+					<string>Arkansas</string>
+					<string>AR</string>
+				</array>
+				<array>
+					<string>British Columbia</string>
+					<string>BC</string>
+				</array>
+				<array>
+					<string>California</string>
+					<string>CA</string>
+				</array>
+				<array>
+					<string>Colorado</string>
+					<string>CO</string>
+				</array>
+				<array>
+					<string>Connecticut</string>
+					<string>CT</string>
+				</array>
+				<array>
+					<string>Delaware</string>
+					<string>DE</string>
+				</array>
+				<array>
+					<string>District of Columbia</string>
+					<string>DC</string>
+				</array>
+				<array>
+					<string>Florida</string>
+					<string>FL</string>
+				</array>
+				<array>
+					<string>Georgia</string>
+					<string>GA</string>
+				</array>
+				<array>
+					<string>Hawaii</string>
+					<string>HI</string>
+				</array>
+				<array>
+					<string>Idaho</string>
+					<string>ID</string>
+				</array>
+				<array>
+					<string>Illinois</string>
+					<string>IL</string>
+				</array>
+				<array>
+					<string>Indiana</string>
+					<string>IN</string>
+				</array>
+				<array>
+					<string>Iowa</string>
+					<string>IA</string>
+				</array>
+				<array>
+					<string>Kansas</string>
+					<string>KS</string>
+				</array>
+				<array>
+					<string>Kentucky</string>
+					<string>KY</string>
+				</array>
+				<array>
+					<string>Louisiana</string>
+					<string>LA</string>
+				</array>
+				<array>
+					<string>Maine</string>
+					<string>ME</string>
+				</array>
+				<array>
+					<string>Manitoba</string>
+					<string>MB</string>
+				</array>
+				<array>
+					<string>Maryland</string>
+					<string>MD</string>
+				</array>
+				<array>
+					<string>Massachusetts</string>
+					<string>MA</string>
+				</array>
+				<array>
+					<string>Michigan</string>
+					<string>MI</string>
+				</array>
+				<array>
+					<string>Minnesota</string>
+					<string>MN</string>
+				</array>
+				<array>
+					<string>Mississippi</string>
+					<string>MS</string>
+				</array>
+				<array>
+					<string>Missouri</string>
+					<string>MO</string>
+				</array>
+				<array>
+					<string>Montana</string>
+					<string>MT</string>
+				</array>
+				<array>
+					<string>Nebraska</string>
+					<string>NE</string>
+				</array>
+				<array>
+					<string>Nevada</string>
+					<string>NV</string>
+				</array>
+				<array>
+					<string>New Brunswick</string>
+					<string>NB</string>
+				</array>
+				<array>
+					<string>New Hampshire</string>
+					<string>NH</string>
+				</array>
+				<array>
+					<string>New Jersey</string>
+					<string>NJ</string>
+				</array>
+				<array>
+					<string>New Mexico</string>
+					<string>NM</string>
+				</array>
+				<array>
+					<string>New York</string>
+					<string>NY</string>
+				</array>
+				<array>
+					<string>Newfoundland</string>
+					<string>NF</string>
+				</array>
+				<array>
+					<string>North Carolina</string>
+					<string>NC</string>
+				</array>
+				<array>
+					<string>North Dakota</string>
+					<string>ND</string>
+				</array>
+				<array>
+					<string>Northwest Territories</string>
+					<string>NT</string>
+				</array>
+				<array>
+					<string>Nova Scotia</string>
+					<string>NS</string>
+				</array>
+				<array>
+					<string>Ohio</string>
+					<string>OH</string>
+				</array>
+				<array>
+					<string>Oklahoma</string>
+					<string>OK</string>
+				</array>
+				<array>
+					<string>Ontario</string>
+					<string>ON</string>
+				</array>
+				<array>
+					<string>Oregon</string>
+					<string>OR</string>
+				</array>
+				<array>
+					<string>Pennsylvania</string>
+					<string>PA</string>
+				</array>
+				<array>
+					<string>Prince Edward Island</string>
+					<string>PE</string>
+				</array>
+				<array>
+					<string>Quebec</string>
+					<string>PQ</string>
+				</array>
+				<array>
+					<string>Rhode Island</string>
+					<string>RI</string>
+				</array>
+				<array>
+					<string>Saskatchewan</string>
+					<string>SK</string>
+				</array>
+				<array>
+					<string>South Carolina</string>
+					<string>SC</string>
+				</array>
+				<array>
+					<string>South Dakota</string>
+					<string>SD</string>
+				</array>
+				<array>
+					<string>Tennessee</string>
+					<string>TN</string>
+				</array>
+				<array>
+					<string>Texas</string>
+					<string>TX</string>
+				</array>
+				<array>
+					<string>Utah</string>
+					<string>UT</string>
+				</array>
+				<array>
+					<string>Vermont</string>
+					<string>VT</string>
+				</array>
+				<array>
+					<string>Virginia</string>
+					<string>VA</string>
+				</array>
+				<array>
+					<string>Washington</string>
+					<string>WA</string>
+				</array>
+				<array>
+					<string>West Virginia</string>
+					<string>WV</string>
+				</array>
+				<array>
+					<string>Wisconsin</string>
+					<string>WI</string>
+				</array>
+				<array>
+					<string>Wyoming</string>
+					<string>WY</string>
+				</array>
+				<array>
+					<string>Yukon</string>
+					<string>YT</string>
+				</array>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

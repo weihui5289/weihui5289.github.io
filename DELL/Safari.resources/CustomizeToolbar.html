@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+
+<style type="text/css">
+
+body
+{
+  margin-bottom: 50px;
+}
+
+.button
+{
+  display: inline-block;
+  text-align: center;
+  margin: 2px;
+  margin-bottom: 5px;
+  -webkit-user-drag: element;
+}
+
+.button > p
+{
+  font-size: 10px;
+  margin: 0;
+}
+
+.default-set
+{
+  border: 1px solid #aaa;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 2em;
+  -webkit-user-drag: element;
+}
+
+.set-label
+{
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+.button *, .default-set *
+{
+  -webkit-user-drag: none;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.edit-fields img
+{
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+var editHasFocus = false;
+
+var CustomizeToolbar = {
+
+    pageLoaded: function()
+    {
+        var dragList = document.getElementsByClassName("drag");
+        for (var i = 0; i < dragList.length; i++)
+            dragList[i].addEventListener("dragstart", CustomizeToolbar.dragStart);            
+
+        HTMLViewController.pageLoaded();
+        CustomizeToolbarController.loaded(false);
+    },
+    
+    doneSelected: function()
+    {
+        CustomizeToolbarController.doneSelected();
+    },
+    
+    dragStart: function()
+    {
+        CustomizeToolbarController.dragStart(event.srcElement.id);
+        event.preventDefault();
+    },
+    
+    createElementForToolbarItem: function(elementIdentifier, buttonIdentifier, description, isDefault)
+    {
+        var element = document.createElement("div");
+        if (isDefault) {
+            element.id = elementIdentifier;
+            element.className = "button drag";
+            element.setAttribute("buttonIdentifier", buttonIdentifier);
+            element.addEventListener("dragstart", CustomizeToolbar.dragStart);
+        } else
+            element.className = "button";
+            
+        var image = document.createElement("img");
+        image.src = "themedata:" + buttonIdentifier + "/TexturedType/ActiveState/EnabledState";
+        element.appendChild(image);
+        
+        var descriptionText = document.createElement("p");
+        descriptionText.appendChild(document.createTextNode(description));
+        element.appendChild(descriptionText);
+
+        return element;
+    },
+    
+    insertToolbarItemBeforeInputFields: function(elementIdentifier, buttonIdentifier, description, isDefault)
+    {
+        var element = CustomizeToolbar.createElementForToolbarItem(elementIdentifier, buttonIdentifier, description, true);
+        var elementToInsertBefore = document.getElementById("InputFieldsToolbarIdentifier").nextSibling;
+        elementToInsertBefore.parentNode.insertBefore(element, elementToInsertBefore);
+        
+        if (isDefault) {
+            element = CustomizeToolbar.createElementForToolbarItem(elementIdentifier, buttonIdentifier, description, false);
+            elementToInsertBefore = document.getElementById("DefaultSetToolbarIdentifier").getElementsByClassName("edit-fields")[0];
+            elementToInsertBefore.parentNode.insertBefore(element, elementToInsertBefore);
+        }
+    }
+    
+    
+}
+
+HTMLViewController.loadLocalizedStrings(CustomizeToolbarController);
+
+</script>
+
+</head>
+
+<body onload="CustomizeToolbar.pageLoaded()">
+
+<h1 class="l12n">Drag your favorite items into the toolbar…</h1>
+
+<div class="button drag" id="BackForwardToolbarIdentifier">
+  <img src="themedata:BackImage/ActiveState/EnabledState/ForwardImage/ActiveState/EnabledState/TexturedType">
+  <p class="l12n">Back/Forward</p>
+</div>
+<div class="button drag" id="ToggleReadingListToolbarIdentifier">
+  <img src="themedata:ReadingListImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Reading List</p>
+</div>
+<div class="button drag" id="TopSitesToolbarIdentifier">
+  <img src="themedata:TopSitesImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Top Sites</p>
+</div>
+<div class="button drag" id="HomeToolbarIdentifier">
+  <img src="themedata:HomeImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Home</p>
+</div>
+<div class="button drag" id="NewTabToolbarIdentifier">
+  <img src="themedata:NewTabImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">New Tab</p>
+</div>
+<div class="button drag" id="HistoryToolbarIdentifier">
+  <img src="themedata:HistoryImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">History</p>
+</div>
+<div class="button drag" id="BookmarksToolbarIdentifier">
+  <img src="themedata:BookmarksImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Bookmarks</p>
+</div>
+<div class="button drag" id="DetachedAddBookmarkToolbarIdentifier">
+  <img src="themedata:AddBookmarkImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Add Bookmark</p>
+</div>
+<div class="button drag" id="ToggleBookmarksBarToolbarIdentifier">
+  <img src="themedata:BookmarksBarImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Bookmarks Bar</p>
+</div>
+<div class="button drag" id="AutoFillToolbarIdentifier">
+  <img src="themedata:AutoFillImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">AutoFill</p>
+</div>
+<div class="button drag" id="TextSizingToolbarIdentifier">
+  <img src="themedata:MakeTextSmallerImage/ActiveState/EnabledState/MakeTextBiggerImage/ActiveState/EnabledState/TexturedType">
+  <p class="l12n" id="zoom-label">Zoom</p>
+</div>
+<div class="button drag" id="MailPageToolbarIdentifier">
+  <img src="themedata:MailImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Mail</p>
+</div>
+<div class="button drag" id="PrintToolbarIdentifier">
+  <img src="themedata:PrintImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Print</p>
+</div>
+<div class="button drag" id="ShowDownloadsWindowToolbarIdentifier">
+  <img src="themedata:DownloadsImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Downloads</p>
+</div>
+<div class="button drag" id="ShowWebInspectorToolbarIdentifier">
+  <img src="themedata:WebInspectorImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Web Inspector</p>
+</div>
+<div class="button drag" id="ReportBugToolbarIdentifier">
+  <img src="themedata:ReportBugImage/TexturedType/ActiveState/EnabledState">
+  <p class="l12n">Report Bug</p>
+</div>
+<div class="button drag edit-fields" id="InputFieldsToolbarIdentifier">
+  <img src="themedata:LocationFieldWithButtonPart/ActiveState/EnabledState/AddBookmarkImage/ActiveState/EnabledState/TexturedType">
+  <img src="themedata:SearchFieldPart/ActiveState/EnabledState">
+  <p class="l12n">Add Bookmark, Address and Search</p>
+</div>
+
+<h1 class="l12n set-label">…or drag the default set.</h1>
+<div class="default-set drag" id="DefaultSetToolbarIdentifier">
+<div class="button">
+  <img src="themedata:BackImage/ActiveState/EnabledState/ForwardImage/ActiveState/EnabledState/TexturedType">
+  <p class="l12n">Back/Forward</p>
+</div>
+<div class="button edit-fields">
+  <img src="themedata:LocationFieldWithButtonPart/ActiveState/EnabledState/AddBookmarkImage/ActiveState/EnabledState/TexturedType">
+  <img src="themedata:SearchFieldPart/ActiveState/EnabledState">
+  <p class="l12n">Add Bookmark, Address and Search</p>
+</div>
+</div>
+
+<div class="action-group">
+<button id="done-button" class="action l12n" onclick="CustomizeToolbar.doneSelected()" type="submit">Done</button>
+</div>
+
+</body>
+</html>

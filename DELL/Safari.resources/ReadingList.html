@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html aria-label="Reading List">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Reading List</title>
+    <style>
+    html {
+        height: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: -webkit-linear-gradient(top, rgba(232, 236, 243, .5), rgba(206, 216, 227, .5)),
+                    -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .25), rgba(255, 255, 255, 0)),
+                    url(safari-resource:/ReadingList-BGLinen.png);
+        background-size: auto, auto, 300px 300px;
+        -webkit-user-select: none;
+        cursor: default;
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    body.legacy-scrollers ::-webkit-scrollbar {
+        width: 20px;
+    }
+    body.legacy-scrollers ::-webkit-scrollbar:horizontal {
+        display: none;
+    }
+    body.legacy-scrollers ::-webkit-scrollbar-track {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        -webkit-border-image: url(safari-resource:/ReadingList-CompTrack.png) 10 0 10 0;
+        border-width: 10px 0 10px 0;
+    }
+    body.legacy-scrollers ::-webkit-scrollbar-track:disabled {
+        display: none;
+    }    
+    body.legacy-scrollers ::-webkit-scrollbar-thumb {
+        -webkit-border-image: url(safari-resource:/ReadingList-CompThumb.png) 8 0 8 0;
+        border-width: 8px 0px 8px 0px;
+    }
+    #side-shadow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 1px;
+        width: 16px;
+        background: url(safari-resource:/ReadingList-BGSideShadow.png);
+        background-size: 100% 100%;
+    }
+    #topbar {
+        background-image: url(safari-resource:/ReadingList-TopBar.png);
+        background-size: 100% 100%;
+        height: 38px;
+    }
+    #topbar button {
+        font: 11px "Lucida Grande", Lucida, small-caption, sans-serif;
+        text-shadow: 0 1px rgba(255, 255, 255, .30);
+        height: 19px;
+        background: none;
+        border-width: 0 5px;
+        -webkit-border-image: url(safari-resource:/ReadingList-PushButtonActiveBorderImage.png) 0 5 0 5;
+        padding: 2px 5px 4px 5px;
+        position: absolute;
+        top: 7px;
+        white-space: nowrap;
+    }
+    #topbar button:active {
+        -webkit-border-image: url(safari-resource:/ReadingList-PushButtonPressedBorderImage.png) 0 5 0 5;
+    }
+    #topbar button:disabled {
+        -webkit-border-image: url(safari-resource:/ReadingList-PushButtonActiveBorderImage.png) 0 5 0 5;
+    }
+    #clear-button {
+        left: 8px;
+    }
+    body.empty-list #clear-button { 
+        display: none;
+    }
+    #add-page-button {
+        right: 8px;
+    }
+    .section-title {
+        text-align: center;
+    }
+    #show-all-button, #show-button-separator, #show-unread-button {
+        display: inline-block;
+        position: relative !important;
+        vertical-align: top;
+    }
+    body.empty-list #show-all-button,
+    body.empty-list #show-button-separator,
+    body.empty-list #show-unread-button { 
+        display: none;
+    }
+    #show-all-button.selected, #show-unread-button.selected {
+        color: white;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .40);
+        -webkit-border-image: url(safari-resource:/ReadingList-SegmentButtonSelectedBorderImage.png) 0 5 0 5;
+    }
+    #show-all-button.selected:active, #show-unread-button.selected:active {
+        -webkit-border-image: url(safari-resource:/ReadingList-SegmentButtonSelectedPressedBorderImage.png) 0 5 0 5;
+    }
+    #show-all-button {
+        border-right: 0 !important;
+        margin-right: 0 !important;
+        padding-right: 10px !important;
+    }
+    #show-button-separator {
+        width: 1px;
+        height: 19px;
+        background: url(safari-resource:/ReadingList-SegmentButtonSeparator.png) center center no-repeat;
+        top: 7px;
+        background-size: 1px 19px;
+    }
+    #show-unread-button {
+        border-left: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 10px !important;
+    }
+    #explanatory-text-wrapper {
+        margin: auto;
+        width: 194px;
+        height: 85%;
+        padding-bottom: 28px;
+        display: none;
+    }
+    body.empty-list #explanatory-text-wrapper {
+        display: table;
+    }
+    #explanatory-text-container {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    #eyeglasses-icon {
+        content: url(safari-resource:/ReadingList-IconLarge.png);
+        width: 108px;
+        height: 43px;
+    }
+    #explanatory-text-container p {
+        color: rgb(114, 124, 135);
+        text-shadow: 0 1px rgba(255, 255, 255, .25);
+        font: 11px "Lucida Grande", Lucida, small-caption, sans-serif;
+        margin-top: 14px;
+        line-height: 16px;
+    }
+    #explanatory-text-container p:first-of-type {
+        color: rgb(62, 70, 81);
+        text-shadow: 0 1px rgba(255, 255, 255, .30);
+        font: bold 13px "Lucida Grande", Lucida, small-caption, sans-serif;
+        margin-top: 20px;
+    }
+    #explanatory-text-click-modifier {
+        color: rgb(62, 70, 81);
+        font-weight: bold;
+    }
+    #reading-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 31px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+    }
+    li {
+        padding: 8px 10px;
+        -webkit-padding-start: 8px;
+        overflow: hidden;
+        background-image: url(safari-resource:/ReadingList-RowDividers.png);
+        background-repeat: repeat-x;
+        background-size: 299px 2px;
+        height: 58px;
+        position: relative;
+    }
+    li:first-child {
+        background: none;
+    }
+    .icon-shadow {
+        position: absolute;
+        left: 8px;
+        top: 6px;
+        width: 36px;
+        height: 36px;
+        background: url(safari-resource:/ReadingList-FavIconShadow-36.png);
+        background-size: 100% 100%;
+    }
+    .icon-mask {
+        box-sizing: border-box;
+        width: 36px;
+        height: 36px;
+        padding: 1px 2px 3px 2px;
+        background-color: white;
+        -webkit-mask-image: url(safari-resource:/ReadingList-FavIconMask-36.png);
+        -webkit-mask-size: 100% 100%;
+    }
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+    .icon.hi-res {
+        display: none;
+    }
+    .icon.generic {
+        content: url(safari-site-icon:/default/32x32);
+        display: none;
+    }
+    .icon-shadow.generic {
+        background: none !important;
+    }
+    .icon-shadow.generic .icon-mask {
+        -webkit-mask-image: none !important;
+        background-color: transparent !important;
+    }
+    .icon-shadow.generic .icon {
+        display: none;
+    }
+    .icon-shadow.generic .icon.generic {
+        display: inline;
+    }
+    .title-delete-button-container {
+        height: 32px;
+    }
+    .title {
+        color: rgb(62, 70, 81);
+        text-shadow: 0 1px rgba(255, 255, 255, .30);
+        font: bold 13px "Lucida Grande", Lucida, small-caption, sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        -webkit-padding-start: 39px;
+        -webkit-transition: margin-right 0s ease .1s;
+        margin-top: -1px;
+    }
+    .title .domain {
+        white-space: nowrap;
+        color: inherit;
+        text-decoration: none;
+        cursor: inherit;
+    }
+    .title.single-line-headline .domain::before {
+        content: "\A";
+        white-space: pre;
+    }
+    .domain {
+        -webkit-user-drag: none;
+    }
+    .preview {
+        color: rgb(114, 124, 135);
+        text-shadow: 0 1px rgba(255, 255, 255, .25);
+        font: 11px / 14px "Lucida Grande", Lucida, small-caption, sans-serif;        
+        overflow : hidden;
+        display: -webkit-box;
+        margin-top: 3px;
+        margin-bottom: 1px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        -webkit-padding-start: 2px;
+    }
+    .delete-button-dead-zone {
+        float: right;
+        width: 20px;
+        height: 20px;
+    }
+    button.delete {
+        border: none;
+        background: url(safari-resource:/ReadingList-DeleteButton.png);
+        background-size: 100% 100%;
+        position: absolute;
+        width: 14px;
+        height: 15px;
+        top: 9px;
+        right: 11px;
+        opacity: 0;
+        -webkit-transition: opacity .05s ease-in-out .1s;
+    }
+    li:hover button.delete {
+        opacity: 1;
+    }
+    button.delete:active {
+        background: url(safari-resource:/ReadingList-DeleteButtonPressed.png);
+    }
+    body.show-only-unread-items li.previously-read {
+        opacity: 0;
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    li.read .title {
+        color: rgb(114, 124, 135);
+        text-shadow: 0 1px rgba(255, 255, 255, .25);
+    }
+    li.read .preview {
+        color: rgb(114, 124, 135);
+        text-shadow: 0 1px rgba(255, 255, 255, .25);
+    }
+    li.selected {
+        height: 59px;
+        background: url(safari-resource:/ReadingList-Selection.png);
+        background-size: 100% 100% !important;
+    }
+    li.selected + li {
+        background-position: 0 -1px;
+        padding-top: 7px;
+    }
+    li.selected + li .icon-container {
+        top: 5px;
+    }
+    li.selected .title {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 1px rgba(97, 114, 145, .5);
+    }
+    li.selected .preview {
+        color: rgb(230, 233, 240);
+        text-shadow: 0 1px rgba(97, 114, 145, .5);
+    }
+    li.selected button.delete {
+        background: url(safari-resource:/ReadingList-DeleteButtonSelection.png);
+    }
+    li.selected button.delete:active {
+        background: url(safari-resource:/ReadingList-DeleteButtonSelectionPressed.png);
+    }
+    li.pre-incoming {
+        opacity: 0;
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    li.incoming {
+        -webkit-transition: opacity .15s ease-out, height .25s ease-out, padding-top .25s ease-out, padding-bottom .25s ease-out;
+        opacity: 1;
+    }
+    li.outgoing {
+        -webkit-transition: opacity .15s ease-out, height .25s ease-out, padding-top .25s ease-out, padding-bottom .25s ease-out;
+        opacity: 0;
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    body.animate-toggle-show-all li.previously-read {
+        -webkit-transition: opacity 0.2s, height 0.2s, padding-top 0.2s, padding-bottom 0.2s;
+    }
+    .hidden {
+        display: none !important;
+    }
+
+    @media (-webkit-min-device-pixel-ratio:2) {
+        body {
+            background-image: -webkit-linear-gradient(top, rgba(232, 236, 243, .5), rgba(206, 216, 227, .5)),
+                -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .25), rgba(255, 255, 255, 0)),
+                url(safari-resource:/ReadingList-BGLinen@2x.png);
+        }
+        body.legacy-scrollers ::-webkit-scrollbar-track {
+            -webkit-border-image: url(safari-resource:/ReadingList-CompTrack@2x.png) 20 0 20 0;
+        }
+        body.legacy-scrollers ::-webkit-scrollbar-thumb {
+            -webkit-border-image: url(safari-resource:/ReadingList-CompThumb@2x.png) 16 0 16 0;
+        }
+        #side-shadow {
+            background-image: url(safari-resource:/ReadingList-BGSideShadow@2x.png);
+        }
+        #topbar {
+            background-image: url(safari-resource:/ReadingList-TopBar@2x.png);
+        }
+        #topbar button {
+            -webkit-border-image: url(safari-resource:/ReadingList-PushButtonActiveBorderImage@2x.png) 0 10 0 10;
+        }
+        #topbar button:active {
+            -webkit-border-image: url(safari-resource:/ReadingList-PushButtonPressedBorderImage@2x.png) 0 10 0 10;
+        }
+        #topbar button:disabled {
+            -webkit-border-image: url(safari-resource:/ReadingList-PushButtonActiveBorderImage@2x.png) 0 10 0 10;
+        }
+        #show-all-button.selected, #show-unread-button.selected {
+            -webkit-border-image: url(safari-resource:/ReadingList-SegmentButtonSelectedBorderImage@2x.png) 0 10 0 10;
+        }
+        #show-all-button.selected:active, #show-unread-button.selected:active {
+            -webkit-border-image: url(safari-resource:/ReadingList-SegmentButtonSelectedPressedBorderImage@2x.png) 0 10 0 10;
+        }
+        #show-button-separator {
+            background: url(safari-resource:/ReadingList-SegmentButtonSeparator@2x.png) center center no-repeat;
+        }
+        #eyeglasses-icon {
+            content: url(safari-resource:/ReadingList-IconLarge@2x.png);
+        }
+        #reading-list > a {
+            background-image: url(safari-resource:/ReadingList-RowDividers@2x.png);
+        }
+        .icon-shadow {
+            background-image: url(safari-resource:/ReadingList-FavIconShadow-36@2x.png);
+        }
+        .icon-mask {
+            -webkit-mask-image: url(safari-resource:/ReadingList-FavIconMask-36@2x.png);
+        }
+        .icon.generic {
+            content: url(safari-site-icon:/default/64x64);
+        }
+        .icon.low-res {
+            display: none;
+        }
+        .icon.hi-res {
+            display: inline;
+        }
+        button.delete {
+            background-image: url(safari-resource:/ReadingList-DeleteButton@2x.png);
+        }
+        button.delete:active {
+            background: url(safari-resource:/ReadingList-DeleteButtonPressed@2x.png);
+        }
+        a.selected {
+            background-image: url(safari-resource:/ReadingList-Selection@2x.png) !important;
+        }
+        a.selected button.delete {
+            background: url(safari-resource:/ReadingList-DeleteButtonSelection@2x.png);
+        }
+        a.selected button.delete:active {
+            background: url(safari-resource:/ReadingList-DeleteButtonSelectionPressed@2x.png);
+        }
+    }
+    </style>
+    <script src="safari-resource:/localizedStrings.js"></script>
+</head>
+<body onload="ReadingListJS.loaded()">
+    <div id="topbar">
+        <button id="clear-button" onclick="ReadingListJSController.clearReadingList()"></button>
+        <div class="section-title"><button id="show-all-button" onclick="ReadingListJS.showAll()"></button><div id="show-button-separator"></div><button id="show-unread-button" class="selected" onclick="ReadingListJS.showUnread()"></button></div>
+        <button id="add-page-button" onclick="ReadingListJSController.addReadingListItemForCurrentPage()"></button>
+    </div>
+    <div id="side-shadow"></div>
+    <div id="explanatory-text-wrapper">
+        <div id="explanatory-text-container">
+            <img aria-label="Eyeglasses icon" id="eyeglasses-icon"></img>
+            <p id="explanatory-text-purpose" dir="auto"></p>
+            <p dir="auto"><span id="explanatory-text-adding-items-pt-1"></span><span id="explanatory-text-click-modifier"></span><span id="explanatory-text-adding-items-pt-2"></span></p>
+            <p id="explanatory-text-hiding-list" dir="auto"></p>
+        </div>
+    </div>
+    <ol id="reading-list">
+    <!-- <li>
+    <div class="icon-shadow"><div class="icon-mask"><img class="icon"><img class="icon generic"></div></div>
+    <div class="title"><span>Apple Introduces MacBook Air: The Next Generation of MacBooks The Next Generation of MacBooks</span><a href="#" class="domain"> — nytimes.com</a></div>
+    <div class="preview">Apple today unveiled the all-new MacBook Air, the first of the next generation of notebooks that will replace mechanical hard disks and optical drives with Internet services and solid-state flash storage. Available in 11-inch and 13-inch models and weighing as little as 2.3 pounds, the MacBook Air is Apple’s lightest, most mobile notebook ever.</div>                
+    <div class="delete-button-dead-zone"></div>
+    <button class="delete"></button>
+    </li> -->
+    </ol>
+</body>
+</html>

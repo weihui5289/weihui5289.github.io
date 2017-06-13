@@ -1,0 +1,123 @@
+/* Style rules for the Find Banner in the Bookmarks View that is shown at the
+   top of the Cover Flow. */
+
+span.RightSide
+{
+    float: right;
+    padding-right: 0px;
+}
+
+span.LeftSide
+{
+    display: none;
+}
+
+#scopeText {
+    position: relative;
+    top: -2px;
+}
+
+.LeftSide > button
+{
+   -webkit-appearance: none;
+    outline: none;
+    margin-top: 6px;
+    min-width: 0;
+    border: 0;
+    background-color: transparent;
+    color: #989aa8;
+    font-size: 12px;
+    font-weight: bold;
+    height: 16px;
+    padding: 0px 9px 0px 9px;
+}
+
+.LeftSide > button > span
+{
+    position: relative;
+    top: -2px;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+.LeftSide > button:hover, .LeftSide > button.scopeButtonSelected
+{
+    padding: 0;
+    border-width: 0px 9px 0px 9px;
+    -webkit-border-image: url("ScopeSelectCombined.png") 0 9 0 9;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.LeftSide > button:active
+{
+    padding: 0;
+    border-width: 0px 9px 0px 9px;
+    -webkit-border-image: url("ScopeSelectCombinedPressed.png") 0 9 0 9;
+    color: white;
+}
+
+#splitter
+{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    margin-left: -7px;
+    cursor: n-resize;
+}
+
+.matchesText
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#search {
+    -webkit-appearance: none;
+    /* Added margin to allow for possible focus ring */
+    margin-left: 7px;
+    margin-top: 5px;
+    width: 193px;
+    border-width: 0px 10px 0px 16px;
+    -webkit-border-image: url("FlowViewSearchField.png") 0 10 0 16;
+    -webkit-box-sizing: border-box;
+    outline: none;
+    color: white;
+    height: 18px;
+    /* Keep this font in sync with BlackButtonLayer */
+    font: small-caption;
+    font-size: 11px;
+    padding-top: 2px;
+    padding-left: 3px;
+    background-color: transparent;
+}
+
+#alternateCancelButton {
+    background: transparent url("BlackSearchFieldCancel.png") no-repeat;
+    width: 12px;
+    height: 13px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: none;
+}
+
+#alternateCancelButton:active {
+    background-image: url("BlackSearchFieldCancelPressed.png");
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    display: none;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}

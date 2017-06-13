@@ -1,0 +1,71 @@
+.treeView {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: white;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.treeView div {
+  text-overflow: ellipsis;
+}
+
+.treeView.expandable {
+  overflow-x: auto;
+}
+
+.treeView.expandable div {
+    text-overflow: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li ul {
+  display: none;
+}
+
+li.expanded > ul {
+  display: block;
+}
+
+li {
+  line-height: 17px;
+}
+
+.treeViewItemIcon {
+  float: left;
+  margin-left: -20px;
+  width: 16px;
+  height: 16px;
+}
+
+.disclosureArrow {
+  display: inline-block;
+  float: left;
+  margin-left: -34px;
+  margin-top: 2px;
+  width: 11px;
+  height: 12px;
+  background-image: url("disclosureTriangleSmallRight.png");
+}
+
+.expanded > div > .disclosureArrow {
+  background-image: url("disclosureTriangleSmallDown.png");
+}
+
+.selected > div {
+  color: white;
+  background: rgb(56, 121, 217);
+}
+
+.disabled {
+  color: rgb(140, 140, 140);
+}
+
+.disabled img {
+    opacity: 0.6;
+}

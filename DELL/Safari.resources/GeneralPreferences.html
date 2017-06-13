@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title class="l12n">General</title>
+<script type="text/javascript" src="Utilities.js"></script>
+<script type="text/javascript" src="HTMLViewController.js"></script>
+<link rel="stylesheet" href="Dialog.css">
+<link rel="stylesheet" href="Preferences.win.css">
+
+<style type="text/css">
+th
+{
+    width: 45%;
+}
+
+td
+{
+    width: 53%;
+}
+
+td select, p
+{
+    width: 90%;
+}
+
+td input[type=text]
+{
+    width: 88%;
+}
+
+th
+{
+    line-height: 30px;
+}
+
+td label
+{
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#home-page-edit
+{
+    display: block;
+}
+
+#prompt-description
+{
+    width: 250px;
+}
+
+</style>
+
+<script type="text/javascript">
+var GeneralPreferences = {
+    pageLoaded: function()
+    {
+        HTMLViewController.pageLoaded();
+        GeneralPreferencesController.loaded(false);
+    },
+    
+    changed: function()
+    {        
+        GeneralPreferencesController.changed();
+    },
+    
+    alwaysPromptChanged: function()
+    {        
+        GeneralPreferencesController.alwaysPromptChanged();
+    },
+
+    homePageChanged: function()
+    {
+        GeneralPreferencesController.homePageChanged();
+    },
+    
+    focused: function()
+    {
+        GeneralPreferencesController.focused();
+    },
+    
+    setHomePageToCurrentPage: function()
+    {
+        GeneralPreferencesController.setHomePageToCurrentPage();
+    },
+    
+    setDownloadPathLabel: function(label)
+    {
+        document.getElementById("download-folder").innerText = label;
+    },
+    
+    setOpenWithTabsLabel: function(label)
+    {
+        document.getElementById("tabs-folder-option").innerText = label;
+    }
+}
+
+HTMLViewController.loadLocalizedStrings(GeneralPreferencesController);
+
+</script>
+</head>
+
+<body onload="GeneralPreferences.pageLoaded()" onfocus="GeneralPreferences.focused()">
+<table>
+  <tr>
+    <th class="l12n">Default web browser:</th>
+    <td>
+        <select id="default-browser-select" onchange="GeneralPreferences.changed()">
+        </select>
+    </td>
+  </tr>
+
+  <tr id="default-search-engine-section" class="hidden">
+    <th class="windows l12n">Default search engine:</th>
+    <td class="windows">
+        <select id="default-search-engine" onchange="GeneralPreferences.changed()">
+        </select>
+    </td>
+  </tr>
+
+  <tr id="safari-opens-with-section">
+    <th class="l12n">Safari opens with:</th>
+    <td>
+        <select id="safari-opens-with-select" onchange="GeneralPreferences.changed()">
+            <option value="0" class="l12n">A new window</option>
+            <option value="1" class="l12n">All windows from last session</option>
+        </select>
+    </td>
+  </tr>
+  
+  <tr>
+    <th class="l12n">New windows open with:</th>
+    <td>
+        <select id="new-windows-select" onchange="GeneralPreferences.changed()">
+            <option value="0" class="l12n">Homepage</option>
+            <option value="1" class="l12n">Empty Page</option>
+            <option value="2" class="l12n">Same Page</option>
+            <option value="3" class="l12n">Bookmarks</option>
+            <hr>
+            <option value="5" id="tabs-folder-option"></option>
+            <option value="1000" class="l12n">Choose tabs folder…</option>
+        </select>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">New tabs open with:</th>
+    <td>
+        <select id="new-tabs-select" onchange="GeneralPreferences.changed()">
+            <option value="0" class="l12n">Homepage</option>
+            <option value="1" class="l12n">Empty Page</option>
+            <option value="2" class="l12n">Same Page</option>
+            <option value="3" class="l12n">Bookmarks</option>
+        </select>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Homepage:</th>
+    <td>
+        <input type="text" id="home-page-edit" onchange="GeneralPreferences.homePageChanged()">
+        <button type="button" id="set-home-current-button" onclick="GeneralPreferences.setHomePageToCurrentPage()" class="l12n">Set to Current Page</button>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Remove history items:</th>
+    <td>
+        <select id="remove-history-select" onchange="GeneralPreferences.changed()">
+            <option value="0" class="l12n">After one day</option>
+            <option value="1" class="l12n">After one week</option>
+            <option value="2" class="l12n">After two weeks</option>
+            <option value="3" class="l12n">After one month</option>
+            <option value="4" class="l12n">After one year</option>
+            <option value="5" class="l12n">Manually</option>
+        </select>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Save downloaded files to:</th>
+    <td>
+        <select id="save-downloads-select" onchange="GeneralPreferences.changed()">
+            <option value="0" id="download-folder"></option>
+            <hr>
+            <option value="1" class="l12n">Other…</option>
+        </select>
+        <label class="windows">
+            <input type="checkbox" id="always-prompt-box" onchange="GeneralPreferences.alwaysPromptChanged()"><span class="l12n">Always prompt before downloading</span>
+        </label>
+        <p id="prompt-description" class="windows l12n">Prompting cannot be disabled for some high-risk file types, including applications.</p>
+    </td>
+  </tr>
+
+  <tr>
+    <th class="l12n">Remove download list items:</th>
+    <td>
+        <select id="remove-downloads-select" onchange="GeneralPreferences.changed()">
+            <option value="0" class="l12n">Manually</option>
+            <option value="1" class="l12n">When Safari Quits</option>
+            <option value="2" class="l12n">Upon Successful Download</option>
+        </select>
+        <label class="mac">
+            <input type="checkbox" id="open-safe-files-box" onchange="GeneralPreferences.changed()"><span class="l12n">Open “safe” files after downloading</span>
+        </label>
+        <p class="mac l12n">“Safe” files include movies, pictures, sounds, PDF and text documents, and disk images and other archives.</p>
+    </td>
+  </tr>
+
+</table>
+
+<a class="help-button" href="open-help-anchor:ibr1072"></a>
+
+</body>
+</html>
